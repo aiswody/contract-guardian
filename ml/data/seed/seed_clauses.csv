@@ -101,3 +101,62 @@ id,text,category,risk_level,source,source_note,collected_at,label_status
 100,"반려동물 사육이 적발되는 경우 계약은 즉시 해지되며 임차인은 지체 없이 퇴거한다.",etc,danger,authored,"유형표 etc×danger — 즉시 해지·퇴거 (카테고리 경계: termination 성격 혼재)",2026-07-12,flagged
 101,"본 계약서에 명시되지 않은 사항은 임대인이 정하는 바에 따른다.",etc,danger,authored,"유형표 etc×danger — 백지위임",2026-07-12,provisional
 102,"임차인은 임차권등기명령을 신청하지 않기로 한다.",etc,danger,authored,"유형표 etc×danger — 법적 대응 수단 봉쇄",2026-07-12,provisional
+103,"임대인은 계약 종료일에 보증금 전액을 임차인이 지정한 계좌로 반환한다.",deposit_return,safe,authored,"유형표 deposit_return×safe — 반환 시기·방법 명확",2026-07-12,provisional
+104,"보증금 반환이 지연되는 경우 임대인은 지연 기간에 대하여 연 5%의 이자를 가산하여 지급한다.",deposit_return,safe,authored,"유형표 deposit_return×safe — 지연 이자 명시 (임차인 유리)",2026-07-12,provisional
+105,"임대인은 임차인의 전세보증금 반환보증 가입을 위한 서류 제공에 지체 없이 협조한다.",deposit_return,safe,authored,"유형표 deposit_return×safe — 보증보험 협조 의무",2026-07-12,provisional
+106,"퇴거 시 공과금 정산 결과에 따라 보증금 반환액이 조정될 수 있다.",deposit_return,caution,authored,"유형표 deposit_return×caution — 정산 기준·상한 미명시",2026-07-12,provisional
+107,"보증금은 계약 종료 후 1개월 이내에 반환한다.",deposit_return,caution,authored,"유형표 deposit_return×caution — 기한 명시되었으나 동시이행에서 크게 이탈",2026-07-12,provisional
+108,"임대인은 특별한 사정이 없는 한 계약 만료일에 보증금을 반환한다.",deposit_return,caution,authored,"유형표 deposit_return×caution — 특별한 사정 기준 모호",2026-07-12,provisional
+109,"임대인이 새 임차인을 구하지 못한 경우 보증금 반환은 다음 임차인의 계약금 수령 이후로 한다.",deposit_return,danger,authored,"유형표 deposit_return×danger — 타인 사정 종속 변형",2026-07-12,provisional
+110,"보증금 반환 지연에 대하여 임차인은 지연 이자나 손해배상을 청구하지 않기로 한다.",deposit_return,danger,authored,"유형표 deposit_return×danger — 법정 권리 포기",2026-07-12,provisional
+111,"임차인의 원상복구 불이행 시 임대인은 보증금 전액을 몰취할 수 있다.",deposit_return,danger,authored,"유형표 deposit_return×danger — 과도한 몰취 (손해액 무관)",2026-07-12,provisional
+112,"누수, 결로 등 건물 하자로 인한 수리는 임대인이 지체 없이 시행한다.",repair_defect,safe,authored,"유형표 repair_defect×safe — 건물 하자 임대인 부담 명확",2026-07-12,provisional
+113,"입주 전 발견된 하자는 임대인이 잔금일 전까지 수리를 완료한다.",repair_defect,safe,authored,"유형표 repair_defect×safe — 수리 시한 명시",2026-07-12,provisional
+114,"보일러 고장 시 임대인은 통지받은 날로부터 3일 이내에 수리한다.",repair_defect,safe,authored,"유형표 repair_defect×safe — 주요설비 수리 기한 명시",2026-07-12,provisional
+115,"에어컨 필터 청소 및 배수구 관리 등 일상적인 유지 관리는 임차인이 한다.",repair_defect,caution,authored,"유형표 repair_defect×caution — 일상적 범위 모호",2026-07-12,provisional
+116,"수리가 필요한 경우 임차인은 우선 자비로 처리한 후 임대인과 정산할 수 있다.",repair_defect,caution,authored,"유형표 repair_defect×caution — 정산 기준·의무 여부 모호",2026-07-12,provisional
+117,"20만원 미만의 수리는 임차인이 부담하되, 반복 발생 시 임대인과 협의한다.",repair_defect,caution,authored,"유형표 repair_defect×caution — 금액 기준 있는 전가",2026-07-12,provisional
+118,"곰팡이, 결로 발생 시 임차인의 환기 소홀로 보아 임차인이 제거 및 도배 비용을 부담한다.",repair_defect,danger,authored,"유형표 repair_defect×danger — 원인 불문 귀책 추정",2026-07-12,provisional
+119,"입주 후 발견되는 모든 하자는 임차인이 수리하며 임대인에게 청구할 수 없다.",repair_defect,danger,authored,"유형표 repair_defect×danger — 포괄 전가 + 청구권 배제",2026-07-12,provisional
+120,"노후 설비의 교체 비용은 사용자인 임차인이 부담한다.",repair_defect,danger,authored,"유형표 repair_defect×danger — 노후(임대인 부담 영역) 전가",2026-07-12,provisional
+121,"임차인은 고의 또는 중대한 과실로 파손한 부분에 한하여 원상복구 책임을 진다.",restoration,safe,authored,"유형표 restoration×safe — 귀책 범위 한정",2026-07-12,provisional
+122,"벽지·장판의 자연 변색 및 가구 자국 등 통상의 사용에 따른 손모는 원상복구 대상에서 제외한다.",restoration,safe,authored,"유형표 restoration×safe — 통상 손모 제외 명시",2026-07-12,provisional
+123,"입주 시 임대인과 임차인은 주택 상태를 사진으로 함께 기록하고, 퇴거 시 이를 원상복구 판단 기준으로 삼는다.",restoration,safe,authored,"유형표 restoration×safe — 객관적 판단 기준 합의",2026-07-12,provisional
+124,"임차인은 퇴거 시 전문 청소업체를 통한 입주청소 상태로 주택을 반환한다.",restoration,caution,authored,"유형표 restoration×caution — 청소 수준 모호 + 비용 전가",2026-07-12,provisional
+125,"벽에 부착물 설치 시 퇴거 시 원상복구를 조건으로 허용한다.",restoration,caution,authored,"유형표 restoration×caution — 복구 범위 모호",2026-07-12,provisional
+126,"장판 및 벽지 훼손 시 임차인은 원상복구하거나 상응하는 비용을 지급한다.",restoration,caution,authored,"유형표 restoration×caution — 훼손 판단 기준 없음",2026-07-12,provisional
+127,"퇴거 시 임차인은 입주 연차와 관계없이 도배 비용 전액을 부담한다.",restoration,danger,authored,"유형표 restoration×danger — 통상 마모 무관 전액 전가",2026-07-12,provisional
+128,"원상복구 비용은 임대인이 지정하는 업체의 견적에 따르며 임차인은 이의를 제기할 수 없다.",restoration,danger,authored,"유형표 restoration×danger — 일방 재량 + 이의 배제",2026-07-12,provisional
+129,"임차인은 퇴거 시 원상복구 명목으로 보증금의 5%를 공제하는 데 동의한다.",restoration,danger,authored,"유형표 restoration×danger — 실손해 무관 정률 공제",2026-07-12,provisional
+130,"임차인의 사정으로 계약 기간 중 퇴거하는 경우 다음 임차인 중개보수와 도배 비용을 부담한다.",termination_renewal,caution,authored,"유형표 termination_renewal×caution — 중개보수(관행)+도배(과도) 혼재",2026-07-12,flagged
+131,"계약 해지 통보는 내용증명 우편으로만 효력이 있다.",termination_renewal,caution,authored,"유형표 termination_renewal×caution — 통보 방식 과도 제한",2026-07-12,provisional
+132,"재계약 여부는 계약 만료 2개월 전 임대인의 통보에 따른다.",termination_renewal,caution,authored,"유형표 termination_renewal×caution — 갱신 주도권 임대인 편중",2026-07-12,provisional
+133,"임대인이 주택을 매도하는 경우 임차인은 계약 기간 중이라도 3개월 내에 퇴거한다.",termination_renewal,danger,authored,"유형표 termination_renewal×danger — 대항력 무력화·중도 퇴거 강제",2026-07-12,provisional
+134,"임차인이 계약 조건을 위반하는 경우 임대인은 통보 없이 즉시 계약을 해지할 수 있다.",termination_renewal,danger,authored,"유형표 termination_renewal×danger — 최고 절차 생략 즉시 해지",2026-07-12,provisional
+135,"중도 해지 시 임차인은 보증금의 10%를 위약금으로 지급한다.",termination_renewal,danger,authored,"유형표 termination_renewal×danger — 과도한 위약금 (보증금 정률)",2026-07-12,provisional
+136,"임대인은 계약 체결일 현재 국세·지방세 완납증명서를 임차인에게 제시한다.",lien_rights,safe,authored,"유형표 lien_rights×safe — 체납 정보 제공 의무",2026-07-12,provisional
+137,"임대인은 임차인이 대항력을 갖추기 전까지 제3자에게 주택을 양도하거나 담보를 제공하지 않는다.",lien_rights,safe,authored,"유형표 lien_rights×safe — 대항력 확보 전 권리 변동 금지",2026-07-12,provisional
+138,"본 주택의 선순위 보증금 현황은 중개대상물 확인·설명서 기재 내용으로 갈음한다.",lien_rights,caution,authored,"유형표 lien_rights×caution — 확인 절차 축약",2026-07-12,provisional
+139,"임대인은 기존 근저당권의 이자를 성실히 납부하기로 한다.",lien_rights,caution,authored,"유형표 lien_rights×caution — 근저당 존치 (말소 계획 없음)",2026-07-12,provisional
+140,"임차인의 보증보험 가입이 거절되는 경우 쌍방 협의하여 계약 유지 여부를 정한다.",lien_rights,caution,authored,"유형표 lien_rights×caution — 무효 조항 대신 모호한 협의",2026-07-12,provisional
+141,"임차인은 임대인의 세금 체납 여부를 확인하지 않기로 하며 이후 이를 문제 삼지 않는다.",lien_rights,danger,authored,"유형표 lien_rights×danger — 법정 열람권 포기 + 이의 배제",2026-07-12,provisional
+142,"본 계약은 등기부상 권리 하자가 발견되더라도 유효하게 존속한다.",lien_rights,danger,authored,"유형표 lien_rights×danger — 하자 발견 시 해지권 배제",2026-07-12,provisional
+143,"임대인의 채무로 주택이 경매되는 경우에도 임차인은 임대인에게 손해배상을 청구하지 않는다.",lien_rights,danger,authored,"유형표 lien_rights×danger — 경매 위험 전가 + 청구권 포기",2026-07-12,provisional
+144,"관리비는 월 5만원으로 하며 청소비와 승강기 유지비를 포함한다. 항목 변경 시 상호 협의한다.",fees_utilities,safe,authored,"유형표 fees_utilities×safe — 금액·항목·변경 절차 명시",2026-07-12,provisional
+145,"공과금은 각 세대 계량기 검침에 따라 임차인이 실사용량만큼 부담한다.",fees_utilities,safe,authored,"유형표 fees_utilities×safe — 실사용 기준 부과",2026-07-12,provisional
+146,"퇴거 시 관리비 정산 내역은 영수증 등 증빙과 함께 임차인에게 제공한다.",fees_utilities,safe,authored,"유형표 fees_utilities×safe — 정산 투명성",2026-07-12,provisional
+147,"관리비에는 공용 관리 항목이 포함되며 세부 내역은 건물 관리 규정에 따른다.",fees_utilities,caution,authored,"유형표 fees_utilities×caution — 세부 내역 외부 규정 위임",2026-07-12,provisional
+148,"인터넷 및 케이블 요금은 건물 일괄 계약에 따라 임차인이 부담한다.",fees_utilities,caution,authored,"유형표 fees_utilities×caution — 선택권 없는 일괄 부과",2026-07-12,provisional
+149,"퇴거 시 정화조 청소비 명목으로 3만원을 정산한다.",fees_utilities,caution,authored,"유형표 fees_utilities×caution — 관행성 소액 정산",2026-07-12,provisional
+150,"공용 부분 수리비 및 건물 노후 시설 교체비는 임차인들이 세대별로 분담한다.",fees_utilities,danger,authored,"유형표 fees_utilities×danger — 소유자 부담 영역 전가",2026-07-12,provisional
+151,"관리비 미납 시 임대인은 단전·단수 조치를 할 수 있다.",fees_utilities,danger,authored,"유형표 fees_utilities×danger — 사적 실력 행사",2026-07-12,provisional
+152,"관리비 항목과 금액은 임대인이 매년 정하여 고지하는 바에 따른다.",fees_utilities,danger,authored,"유형표 fees_utilities×danger — 일방 결정 구조",2026-07-12,provisional
+153,"임차인은 이웃에 피해를 주지 않도록 심야 시간 소음 발생에 주의한다.",etc,safe,authored,"유형표 etc×safe — 통상적 생활 규칙",2026-07-12,provisional
+154,"기타 본 계약서에 정하지 않은 사항은 주택임대차보호법 및 민법, 부동산 관례에 따른다.",etc,safe,authored,"유형표 etc×safe — 법정 기본값 준거",2026-07-12,provisional
+155,"본 특약사항은 쌍방이 협의하여 서면으로만 변경할 수 있다.",etc,safe,authored,"유형표 etc×safe — 일방 변경 방지",2026-07-12,provisional
+156,"임차인은 임대인의 동의 없이 제3자를 동거인으로 둘 수 없다.",etc,caution,authored,"유형표 etc×caution — 주거 자유 제한 (기준 모호)",2026-07-12,provisional
+157,"임대인은 비상시 보관 중인 열쇠로 주택에 출입할 수 있다.",etc,caution,authored,"유형표 etc×caution — 비상시 기준 모호 (주거 침입 소지)",2026-07-12,flagged
+158,"주차 공간은 건물 사정에 따라 배정이 변경될 수 있다.",etc,caution,authored,"유형표 etc×caution — 변경 조건 모호",2026-07-12,provisional
+159,"임차인은 본 계약과 관련하여 여하한 민형사상 이의를 제기하지 않는다.",etc,danger,authored,"유형표 etc×danger — 포괄적 쟁송권 포기",2026-07-12,provisional
+160,"계약 위반 시 임차인은 임대인이 정한 손해배상액을 이의 없이 지급한다.",etc,danger,authored,"유형표 etc×danger — 배상액 일방 결정 + 이의 배제",2026-07-12,provisional
+161,"임차인은 주택임대차분쟁조정위원회 등 외부 기관에 분쟁 조정을 신청하지 않기로 한다.",etc,danger,authored,"유형표 etc×danger — 분쟁 해결 수단 봉쇄",2026-07-12,provisional

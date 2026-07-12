@@ -128,7 +128,7 @@ id,text,category,risk_level,source,source_note,collected_at,label_status
 127,퇴거 시 임차인은 입주 연차와 관계없이 도배 비용 전액을 부담한다.,restoration,danger,authored,유형표 restoration×danger — 통상 마모 무관 전액 전가,2026-07-12,confirmed
 128,원상복구 비용은 임대인이 지정하는 업체의 견적에 따르며 임차인은 이의를 제기할 수 없다.,restoration,danger,authored,유형표 restoration×danger — 일방 재량 + 이의 배제,2026-07-12,confirmed
 129,임차인은 퇴거 시 원상복구 명목으로 보증금의 5%를 공제하는 데 동의한다.,restoration,danger,authored,유형표 restoration×danger — 실손해 무관 정률 공제,2026-07-12,confirmed
-130,임차인의 사정으로 계약 기간 중 퇴거하는 경우 다음 임차인 중개보수와 도배 비용을 부담한다.,termination_renewal,caution,authored,flagged: v0.5 사례 25 — 중개보수는 관행 범위이나 도배비 전가가 혼재되어 caution으로 두되 경계 사례 유지,2026-07-12,flagged
+130,임차인의 사정으로 계약 기간 중 퇴거하는 경우 다음 임차인 중개보수와 도배 비용을 부담한다.,termination_renewal,caution,authored,판정 확정: 사례 25 — 유한·1회성 부담이라 danger 미달. caution,2026-07-12,confirmed
 131,계약 해지 통보는 내용증명 우편으로만 효력이 있다.,termination_renewal,caution,authored,유형표 termination_renewal×caution — 통보 방식 과도 제한,2026-07-12,confirmed
 132,재계약 여부는 계약 만료 2개월 전 임대인의 통보에 따른다.,termination_renewal,danger,authored,3차 파일럿 재판정: 법정 갱신요구권을 임대인 통보에 종속 → danger,2026-07-12,confirmed
 133,임대인이 주택을 매도하는 경우 임차인은 계약 기간 중이라도 3개월 내에 퇴거한다.,termination_renewal,danger,authored,유형표 termination_renewal×danger — 대항력 무력화·중도 퇴거 강제,2026-07-12,confirmed
@@ -155,7 +155,7 @@ id,text,category,risk_level,source,source_note,collected_at,label_status
 154,"기타 본 계약서에 정하지 않은 사항은 주택임대차보호법 및 민법, 부동산 관례에 따른다.",etc,safe,authored,유형표 etc×safe — 법정 기본값 준거,2026-07-12,confirmed
 155,본 특약사항은 쌍방이 협의하여 서면으로만 변경할 수 있다.,etc,safe,authored,유형표 etc×safe — 일방 변경 방지,2026-07-12,confirmed
 156,임차인은 임대인의 동의 없이 제3자를 동거인으로 둘 수 없다.,etc,caution,authored,유형표 etc×caution — 주거 자유 제한 (기준 모호),2026-07-12,confirmed
-157,임대인은 비상시 보관 중인 열쇠로 주택에 출입할 수 있다.,etc,caution,authored,flagged: v0.5 사례 28 — 비상시 한정이 있어 caution이나 출입 기준·사후 통지 절차가 모호함,2026-07-12,flagged
+157,임대인은 비상시 보관 중인 열쇠로 주택에 출입할 수 있다.,etc,caution,authored,판정 확정: 사례 28 — 비상시 한정 있어 caution. 한정 없으면 danger,2026-07-12,confirmed
 158,주차 공간은 건물 사정에 따라 배정이 변경될 수 있다.,etc,caution,authored,유형표 etc×caution — 변경 조건 모호,2026-07-12,confirmed
 159,임차인은 본 계약과 관련하여 여하한 민형사상 이의를 제기하지 않는다.,etc,danger,authored,유형표 etc×danger — 포괄적 쟁송권 포기,2026-07-12,confirmed
 160,계약 위반 시 임차인은 임대인이 정한 손해배상액을 이의 없이 지급한다.,etc,danger,authored,유형표 etc×danger — 배상액 일방 결정 + 이의 배제,2026-07-12,confirmed
@@ -163,13 +163,13 @@ id,text,category,risk_level,source,source_note,collected_at,label_status
 162,임대인(갑)은 임대차 종료와 동시에 임차인(을)에게 보증금 전액을 반환하기로 한다.,deposit_return,safe,authored,4차: 갑을 표기 변형 — 동시이행 명시,2026-07-12,confirmed
 163,보증금 반환과 주택 인도는 동시에 이행한다.,deposit_return,safe,authored,4차: 동시이행 간결 변형,2026-07-12,confirmed
 164,보증금 중 100만원은 하자 점검 완료 시까지 유보할 수 있다.,deposit_return,caution,authored,"4차: 일부 유보 — 금액 명시, 기한은 점검 종속",2026-07-12,confirmed
-165,퇴거 정산 시 도시가스 철거비 등 제반 비용을 보증금에서 공제할 수 있다.,deposit_return,danger,authored,"flagged: 도시가스 철거비 예시는 있으나 ""등 제반 비용""이 포괄 공제라 caution/danger 경계에서 danger 상향",2026-07-12,flagged
+165,퇴거 정산 시 도시가스 철거비 등 제반 비용을 보증금에서 공제할 수 있다.,deposit_return,danger,authored,"판정 확정: 사례 32 — 예시+포괄(등 제반 비용) 혼합도 포괄 공제로 보아 danger (§2.1-2)",2026-07-12,confirmed
 166,임대인은 계약 만료일로부터 2주 이내에 보증금을 반환한다.,deposit_return,caution,authored,4차: 기한 명시되나 동시이행 이탈,2026-07-12,confirmed
 167,임대인의 사정으로 보증금 반환이 지연되어도 지연 이자는 발생하지 않는 것으로 한다.,deposit_return,danger,authored,4차: 지연 이자 청구권 사전 배제,2026-07-12,confirmed
 168,보증금 반환 시기는 임대인의 자금 사정을 고려하여 임대인이 정한다.,deposit_return,danger,authored,4차: 반환 시기 일방 결정,2026-07-12,confirmed
 169,임차인이 만기 전 퇴거 의사를 밝힌 경우 보증금 반환 의무는 차기 임차인 입주일까지 유예된다.,deposit_return,danger,authored,4차: 타인 사정 종속 변형 (사례 15 동형),2026-07-12,confirmed
 170,"전기, 수도, 보일러 등 주요 설비의 노후로 인한 고장 수리는 임대인(갑)의 부담으로 한다.",repair_defect,safe,authored,4차: 갑을 표기 변형 — 주요설비 임대인 부담,2026-07-12,confirmed
-171,입주 후 7일 이내에 고지되지 않은 하자는 임차인이 수리한다.,repair_defect,danger,authored,flagged: 7일 이후 미고지 하자를 전부 임차인 수리로 전가하여 숨은·주요 하자까지 포함될 수 있음,2026-07-12,flagged
+171,입주 후 7일 이내에 고지되지 않은 하자는 임차인이 수리한다.,repair_defect,danger,authored,판정 확정: 사례 33 — 단기 고지기간 경과 후 숨은·주요 하자까지 전면 전가 → danger,2026-07-12,confirmed
 172,잔고장 수리는 임차인이 부담한다.,repair_defect,caution,authored,4차: 잔고장 정의 없음 — 모호 축,2026-07-12,confirmed
 173,"세면대, 변기 막힘은 사용상 과실로 보아 임차인이 수리한다.",repair_defect,caution,authored,4차: 귀책 추정이나 통상 사용 과실 관행 범위,2026-07-12,confirmed
 174,수리 시 임차인은 임대인이 지정한 업체를 이용한다.,repair_defect,caution,authored,4차: 업체 선택권 제한,2026-07-12,confirmed
@@ -200,7 +200,7 @@ id,text,category,risk_level,source,source_note,collected_at,label_status
 199,전입신고는 잔금일 다음 주까지 완료하기로 한다.,lien_rights,danger,authored,v0.5 §2.1: 전입신고 시점을 잔금일 다음 주로 늦춰 대항력 확보를 제한하므로 danger,2026-07-12,confirmed
 200,임대인은 임차인의 전세권 설정 요구에 대해 추후 협의할 수 있다.,lien_rights,caution,authored,4차: 협의 위임 — 모호 축,2026-07-12,confirmed
 201,계약 후 등기 변동 사항은 임차인이 확인할 책임이 있다.,lien_rights,caution,authored,4차: 확인 책임 전가,2026-07-12,confirmed
-202,본 주택은 신탁 등기된 부동산으로 수탁사의 동의서는 추후 교부한다.,lien_rights,caution,authored,flagged: 신탁 동의서 추후 교부는 즉시 책임 포기는 아니나 계약 권한·동의 확보 여부가 불명확함,2026-07-12,flagged
+202,본 주택은 신탁 등기된 부동산으로 수탁사의 동의서는 추후 교부한다.,lien_rights,danger,authored,판정 확정: 사례 34 — 신탁 무동의 계약은 효력 자체가 위협받는 하자로 해소 약속만으로는 부족 → danger 상향 (FN 최소화),2026-07-12,confirmed
 203,신탁회사의 동의 없이 체결한 본 계약에 대해 임차인은 임대인에게 책임을 묻지 않는다.,lien_rights,danger,authored,4차: 무권한 계약 책임 면제,2026-07-12,confirmed
 204,임대인이 주택을 매도하는 경우 새로운 소유자에 대한 임차권 주장은 임차인의 책임으로 한다.,lien_rights,danger,authored,4차: 대항력 승계 부정 뉘앙스,2026-07-12,confirmed
 205,확정일자 및 전세권 설정 등 보증금 보전 조치는 하지 않기로 상호 합의한다.,lien_rights,danger,authored,4차: 우선변제권 확보 수단 포기,2026-07-12,confirmed
@@ -216,8 +216,14 @@ id,text,category,risk_level,source,source_note,collected_at,label_status
 215,본 계약에서 정하지 않은 사항은 관계 법령 및 일반 관례에 따라 상호 협의하여 처리한다.,etc,safe,authored,4차: 법정 기본값 준거 변형,2026-07-12,confirmed
 216,임차인은 임대인의 동의 없이 도어락을 교체할 수 없다.,etc,caution,authored,4차: 보안 관련 생활 제한 — 명확하지만 기본값보다 불리,2026-07-12,confirmed
 217,임차인의 차량은 1대에 한하여 등록할 수 있으며 추가 등록은 임대인 재량으로 한다.,etc,caution,authored,4차: 부분 재량 위임,2026-07-12,confirmed
-218,게시판 부착물 등 건물 규약은 임대인이 정하는 바에 따른다.,etc,caution,authored,flagged: 게시판 부착물 등 경미한 건물 규약이나 임대인 일방 결정 구조라 caution/danger 경계,2026-07-12,flagged
+218,게시판 부착물 등 건물 규약은 임대인이 정하는 바에 따른다.,etc,caution,authored,판정 확정: 사례 35 — 위임 대상이 경미한 생활 규약에 한정 → caution. 계약 조건 전반 위임이면 danger,2026-07-12,confirmed
 219,임차인은 계약 기간 중 발생하는 모든 민원 및 법적 분쟁 비용을 부담한다.,etc,danger,authored,4차: 포괄적 비용 전가,2026-07-12,confirmed
 220,본 특약이 법령과 상충하는 경우에도 특약이 우선한다.,etc,danger,authored,4차: 강행규정 배제 시도,2026-07-12,confirmed
 221,임차인은 임대인의 요구가 있으면 언제든지 주택 내부 점검에 응해야 한다.,etc,danger,authored,4차: 무제한 출입·점검 (사례 28의 danger 축),2026-07-12,confirmed
 222,퇴거 시 임차인은 임대인이 청구하는 일체의 비용을 정산 후 이의를 제기하지 않는다.,etc,danger,authored,4차: 청구 백지위임 + 이의 포기,2026-07-12,confirmed
+223,"형광등, 수도꼭지 등의 교체는 임차인이 하되 노후로 인한 경우에는 임대인과 협의한다.",repair_defect,caution,authored,"보충: 협의 결과 불명 — 모호 축",2026-07-12,provisional
+224,"임대인은 보증금 반환 관련 분쟁이나 소송이 없음을 구두로 확인하였다.",lien_rights,caution,authored,"보충: 구두 확인 — 서면 증빙 없음",2026-07-12,provisional
+225,"근저당권 말소는 임대인의 매매 잔금 수령 일정에 따라 순차 진행하기로 한다.",lien_rights,caution,authored,"보충: 말소 시점이 타 거래에 종속 — 모호 축",2026-07-12,provisional
+226,"관리비 항목은 입주 후 관리사무소 안내에 따른다.",fees_utilities,caution,authored,"보충: 항목 확정을 외부 안내에 위임",2026-07-12,provisional
+227,"임차인은 공용 옥상 및 창고를 임대인 허가 하에 사용할 수 있다.",etc,caution,authored,"보충: 허가 재량 — 기준 없음",2026-07-12,provisional
+228,"임차인은 계약 조건을 제3자에게 누설하지 않으며 위반 시 임대인이 정한 위약금을 지급한다.",etc,danger,authored,"보충: 위약금 일방 결정 (배상액 일방 결정 계열)",2026-07-12,provisional

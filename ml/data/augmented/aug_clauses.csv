@@ -48,63 +48,133 @@ a047,141,"임차인은 임대인의 국세·지방세 체납 여부를 확인하
 a048,54,"퇴거할 때 전문 업체 수준으로 직접 청소하거나 청소비 10만원을 내기로 한다.",restoration,caution,colloquial,2026-07-12,confirmed
 a049,100,"반려동물을 기르다 적발되면 계약은 바로 해지되고 임차인은 즉시 집을 비운다.",termination_renewal,danger,colloquial,2026-07-12,confirmed
 a050,223,"형광등이나 수도꼭지 같은 부속품 교체는 임차인이 하고, 노후 때문이면 임대인과 협의하기로 한다.",repair_defect,caution,colloquial,2026-07-12,confirmed
-a051,1,"임대인은 주택을 계약 목적에 맞게 사용할 수 있는 상태로 넘겨주며, 임대차 기간은 인도일부터 2년간으로 정한다.",termination_renewal,safe,word_variation,2026-07-12,provisional
-a052,2,"입주 전에 수리가 필요한 시설과 그 비용을 누가 부담할지 쌍방이 협의하여 정한다.",repair_defect,safe,reorder,2026-07-12,provisional
-a053,4,"계약 기간 동안 집주인은 주택을 정상적으로 사용할 수 있는 상태로 유지할 의무가 있다.",repair_defect,safe,colloquial,2026-07-12,provisional
-a054,7,"임대인이 부담해야 할 수리비를 임차인이 대신 지출한 경우 그 금액의 상환을 임대인에게 청구할 수 있다.",repair_defect,safe,expand,2026-07-12,provisional
-a055,10,"중도금(없으면 잔금) 지급 전까지는 임대인은 계약금의 두 배를 물어주고, 임차인은 계약금을 포기하는 방식으로 계약을 해제할 수 있다.",termination_renewal,safe,word_variation,2026-07-12,provisional
-a056,12,"임차인의 잘못 없이 주택 일부가 멸실되는 등 계약 목적대로 사용할 수 없게 되면 임차인은 계약을 해지할 수 있다.",termination_renewal,safe,reorder,2026-07-12,provisional
-a057,15,"임대인은 본인 또는 직계 가족의 실거주 등 주택임대차보호법이 정한 사유가 있을 때에만 갱신 요구를 거절할 수 있다.",termination_renewal,safe,word_variation,2026-07-12,provisional
-a058,19,"계약이 끝날 때 임차인은 공과금과 관리비를 정산한다.",fees_utilities,safe,condense,2026-07-12,provisional
-a059,20,"임차인이 관리비에 포함해 납부한 장기수선충당금은 임대인에게 돌려달라고 청구할 수 있다.",fees_utilities,safe,colloquial,2026-07-12,provisional
-a060,22,"중개보수는 정해진 요율에 따라 임대인과 임차인이 각자 부담하기로 한다.",etc,safe,condense,2026-07-12,provisional
-a061,23,"임대차 분쟁이 생기면 소송에 앞서 주택임대차분쟁조정위원회에 조정을 신청하기로 한다.",etc,safe,condense,2026-07-12,provisional
-a062,27,"임대인은 전세보증금 반환보증 가입에 필요한 서류 제출 등 절차에 성실히 협조한다.",deposit_return,safe,word_variation,2026-07-12,provisional
-a063,30,"잔금일 전에는 임대인이 이 주택의 소유권을 제3자에게 이전하지 않는다.",lien_rights,safe,reorder,2026-07-12,provisional
-a064,32,"임대 기간 중 집을 팔 계획이 생기면 임대인은 임차인에게 미리 알려준다.",lien_rights,safe,colloquial,2026-07-12,provisional
-a065,33,"잔금일 다음 날까지 계약 당시의 등기상 권리관계를 그대로 유지하며, 위반 시 이 계약은 무효로 한다.",lien_rights,safe,reorder,2026-07-12,provisional
-a066,35,"계약 후 알리지 않은 근저당이 확인되면 임차인은 계약을 해지하고 지급한 금액을 즉시 돌려받을 수 있다.",lien_rights,safe,reorder,2026-07-12,provisional
-a067,37,"임대인이 통상의 사용에 따른 손모가 아님을 입증하지 못하는 한 임차인은 원상회복 의무를 지지 않는다.",restoration,safe,reorder,2026-07-12,provisional
-a068,38,"2년 이상 거주한 임차인은 도배와 장판의 원상회복 의무를 지지 않는다.",restoration,safe,reorder,2026-07-12,provisional
-a069,41,"재계약 때 월세는 주변 시세를 참고해 쌍방 협의로 조정하기로 한다.",termination_renewal,safe,colloquial,2026-07-12,provisional
-a070,48,"월세를 한 번이라도 밀리면 계약은 곧바로 해지되고 임차인은 즉시 집을 비워야 한다.",termination_renewal,danger,colloquial,2026-07-12,provisional
-a071,50,"퇴거 시 원상복구 비용 명목으로 금 200만원을 임대인에게 지급하기로 한다.",restoration,danger,register,2026-07-12,provisional
-a072,51,"계약을 갱신할 때마다 월세는 10퍼센트씩 자동으로 오른다.",termination_renewal,danger,colloquial,2026-07-12,provisional
-a073,52,"이 주택의 유지 및 관리 책임은 전적으로 세입자에게 있다.",repair_defect,danger,expand,2026-07-12,provisional
-a074,59,"보증금은 퇴거 후 관리비 등 각종 정산이 끝나는 대로 돌려주기로 한다.",deposit_return,caution,word_variation,2026-07-12,provisional
-a075,60,"하자 확인을 위해 보증금 가운데 50만원은 퇴거 후 일주일 안에 정산해 반환한다.",deposit_return,caution,word_variation,2026-07-12,provisional
-a076,64,"보증금 반환 시 새 임차인의 보증금이 더 낮으면 그 차액을 빼고 돌려준다.",deposit_return,danger,colloquial,2026-07-12,provisional
-a077,66,"옵션으로 딸린 에어컨과 세탁기, 냉장고가 고장 나면 수리비는 임차인이 낸다.",repair_defect,danger,colloquial,2026-07-12,provisional
-a078,68,"겨울철 보일러나 수도가 얼어 터지면 그 수리비는 임차인 부담으로 한다.",repair_defect,caution,colloquial,2026-07-12,provisional
-a079,71,"임차인은 퇴거 시 주택을 입주했을 때의 상태 그대로 반환하기로 한다.",restoration,caution,register,2026-07-12,provisional
-a080,72,"벽에 못을 박는 등 훼손이 생긴 경우 그 원상복구 비용은 임차인이 부담한다.",restoration,caution,reorder,2026-07-12,provisional
-a081,73,"퇴거 시 도배 상태가 좋지 않으면 도배 비용을 임차인이 부담하기로 한다.",restoration,caution,word_variation,2026-07-12,provisional
-a082,74,"원상복구를 어디까지 할지, 비용이 얼마인지는 퇴거 시점에 임대인이 판단해 정한다.",restoration,danger,expand,2026-07-12,provisional
-a083,78,"재계약할 때 월세는 주변 시세만큼 올릴 수 있다.",termination_renewal,caution,colloquial,2026-07-12,provisional
-a084,82,"임차인은 현재 등기부등본의 권리관계를 직접 열람해 확인했다.",lien_rights,safe,condense,2026-07-12,provisional
-a085,85,"임차인은 지금은 물론 앞으로의 등기상 권리관계 변동에 대해서도 이의를 제기하지 않기로 한다.",lien_rights,danger,expand,2026-07-12,provisional
-a086,90,"관리비는 월 8만원으로 하되, 공용 전기 사용량에 따라 달라질 수 있다.",fees_utilities,caution,word_variation,2026-07-12,provisional
-a087,94,"장기수선충당금은 세입자가 부담하고 나갈 때도 돌려주지 않는다.",fees_utilities,danger,colloquial,2026-07-12,provisional
-a088,97,"임대인은 필요하면 미리 알린 뒤 집에 들러 상태를 확인할 수 있다.",etc,caution,colloquial,2026-07-12,provisional
-a089,98,"이 계약에 관한 소송의 관할 법원은 임대인 주소지의 법원으로 한다.",etc,caution,register,2026-07-12,provisional
-a090,101,"이 계약서에 적히지 않은 사항은 임대인이 정하는 대로 따른다.",etc,danger,colloquial,2026-07-12,provisional
-a091,103,"계약 종료일에 임대인은 보증금 전액을 임차인 명의 계좌로 입금한다.",deposit_return,safe,word_variation,2026-07-12,provisional
-a092,104,"보증금 반환이 늦어지면 임대인은 지연된 기간만큼 연 5% 이자를 붙여 지급한다.",deposit_return,safe,colloquial,2026-07-12,provisional
-a093,108,"특별한 사정이 없는 한 임대인은 만기일에 보증금을 돌려준다.",deposit_return,caution,condense,2026-07-12,provisional
-a094,111,"임차인이 원상복구를 하지 않으면 임대인은 보증금 전액을 돌려주지 않을 수 있다.",deposit_return,danger,word_variation,2026-07-12,provisional
-a095,113,"입주 전에 발견된 하자는 잔금일 전까지 임대인이 고쳐 놓는다.",repair_defect,safe,colloquial,2026-07-12,provisional
-a096,114,"보일러가 고장 나면 임대인은 연락받은 날부터 3일 안에 수리해 준다.",repair_defect,safe,colloquial,2026-07-12,provisional
-a097,115,"에어컨 필터나 배수구 청소 같은 일상적인 관리는 임차인 몫으로 한다.",repair_defect,safe,colloquial,2026-07-12,provisional
-a098,117,"20만원이 안 되는 수리는 임차인이 부담하되, 같은 고장이 반복되면 임대인과 협의한다.",repair_defect,caution,word_variation,2026-07-12,provisional
-a099,123,"입주할 때 집 상태를 임대인과 임차인이 함께 사진으로 남기고, 퇴거 시 원상복구 기준으로 삼는다.",restoration,safe,colloquial,2026-07-12,provisional
-a100,124,"퇴거 시 임차인은 입주청소 업체를 부른 수준으로 청소된 상태로 집을 반환해야 한다.",restoration,danger,word_variation,2026-07-12,provisional
-a101,129,"퇴거 시 원상복구 명목으로 보증금의 5퍼센트를 공제하는 것에 임차인은 동의한다.",restoration,danger,register,2026-07-12,provisional
-a102,131,"계약 해지 통보는 내용증명 우편에 의한 경우에만 효력을 가진다.",termination_renewal,caution,register,2026-07-12,provisional
-a103,132,"재계약 여부는 만기 두 달 전 임대인이 통보하는 내용에 따르기로 한다.",termination_renewal,danger,colloquial,2026-07-12,provisional
-a104,133,"임대인이 집을 파는 경우 임차인은 계약 기간이 남아 있어도 3개월 안에 집을 비워 준다.",termination_renewal,danger,colloquial,2026-07-12,provisional
-a105,136,"임대인은 계약일 기준 국세와 지방세를 완납했음을 증명하는 서류를 임차인에게 보여준다.",lien_rights,safe,expand,2026-07-12,provisional
-a106,137,"임차인이 전입신고와 확정일자를 마치기 전까지 임대인은 집을 팔거나 담보로 제공하지 않는다.",lien_rights,safe,word_variation,2026-07-12,provisional
-a107,139,"임대인은 현재 설정된 근저당 대출의 이자를 밀리지 않고 납부하기로 한다.",lien_rights,caution,colloquial,2026-07-12,provisional
-a108,145,"공과금은 세대별 계량기 수치에 따라 임차인이 쓴 만큼만 낸다.",fees_utilities,safe,colloquial,2026-07-12,provisional
-a109,154,"여기서 정하지 않은 내용은 주택임대차보호법과 민법, 일반 관례에 따르기로 한다.",etc,safe,condense,2026-07-12,provisional
-a110,160,"계약을 위반하면 임차인은 임대인이 정하는 손해배상금을 이의 없이 지급하기로 한다.",etc,danger,register,2026-07-12,provisional
+a051,1,"임대인은 주택을 계약 목적에 맞게 사용할 수 있는 상태로 넘겨주며, 임대차 기간은 인도일부터 2년간으로 정한다.",termination_renewal,safe,word_variation,2026-07-12,confirmed
+a052,2,"입주 전에 수리가 필요한 시설과 그 비용을 누가 부담할지 쌍방이 협의하여 정한다.",repair_defect,safe,reorder,2026-07-12,confirmed
+a053,4,"계약 기간 동안 집주인은 주택을 정상적으로 사용할 수 있는 상태로 유지할 의무가 있다.",repair_defect,safe,colloquial,2026-07-12,confirmed
+a054,7,"임대인이 부담해야 할 수리비를 임차인이 대신 지출한 경우 그 금액의 상환을 임대인에게 청구할 수 있다.",repair_defect,safe,expand,2026-07-12,confirmed
+a055,10,"중도금(없으면 잔금) 지급 전까지는 임대인은 계약금의 두 배를 물어주고, 임차인은 계약금을 포기하는 방식으로 계약을 해제할 수 있다.",termination_renewal,safe,word_variation,2026-07-12,confirmed
+a056,12,"임차인의 잘못 없이 주택 일부가 멸실되는 등 계약 목적대로 사용할 수 없게 되면 임차인은 계약을 해지할 수 있다.",termination_renewal,safe,reorder,2026-07-12,confirmed
+a057,15,"임대인은 본인 또는 직계 가족의 실거주 등 주택임대차보호법이 정한 사유가 있을 때에만 갱신 요구를 거절할 수 있다.",termination_renewal,safe,word_variation,2026-07-12,confirmed
+a058,19,"계약이 끝날 때 임차인은 공과금과 관리비를 정산한다.",fees_utilities,safe,condense,2026-07-12,confirmed
+a059,20,"임차인이 관리비에 포함해 납부한 장기수선충당금은 임대인에게 돌려달라고 청구할 수 있다.",fees_utilities,safe,colloquial,2026-07-12,confirmed
+a060,22,"중개보수는 정해진 요율에 따라 임대인과 임차인이 각자 부담하기로 한다.",etc,safe,condense,2026-07-12,confirmed
+a061,23,"임대차 분쟁이 생기면 소송에 앞서 주택임대차분쟁조정위원회에 조정을 신청하기로 한다.",etc,safe,condense,2026-07-12,confirmed
+a062,27,"임대인은 전세보증금 반환보증 가입에 필요한 서류 제출 등 절차에 성실히 협조한다.",deposit_return,safe,word_variation,2026-07-12,confirmed
+a063,30,"잔금일 전에는 임대인이 이 주택의 소유권을 제3자에게 이전하지 않는다.",lien_rights,safe,reorder,2026-07-12,confirmed
+a064,32,"임대 기간 중 집을 팔 계획이 생기면 임대인은 임차인에게 미리 알려준다.",lien_rights,safe,colloquial,2026-07-12,confirmed
+a065,33,"잔금일 다음 날까지 계약 당시의 등기상 권리관계를 그대로 유지하며, 위반 시 이 계약은 무효로 한다.",lien_rights,safe,reorder,2026-07-12,confirmed
+a066,35,"계약 후 알리지 않은 근저당이 확인되면 임차인은 계약을 해지하고 지급한 금액을 즉시 돌려받을 수 있다.",lien_rights,safe,reorder,2026-07-12,confirmed
+a067,37,"임대인이 통상의 사용에 따른 손모가 아님을 입증하지 못하는 한 임차인은 원상회복 의무를 지지 않는다.",restoration,safe,reorder,2026-07-12,confirmed
+a068,38,"2년 이상 거주한 임차인은 도배와 장판의 원상회복 의무를 지지 않는다.",restoration,safe,reorder,2026-07-12,confirmed
+a069,41,"재계약 때 차임은 주변 시세를 참고해 쌍방 협의로 조정하기로 한다.",termination_renewal,safe,colloquial,2026-07-12,confirmed
+a070,48,"월세를 한 번이라도 밀리면 계약은 곧바로 해지되고 임차인은 즉시 집을 비워야 한다.",termination_renewal,danger,colloquial,2026-07-12,confirmed
+a071,50,"퇴거 시 원상복구 비용 명목으로 금 200만원을 임대인에게 지급하기로 한다.",restoration,danger,register,2026-07-12,confirmed
+a072,51,"계약을 갱신할 때마다 월세는 10퍼센트씩 자동으로 오른다.",termination_renewal,danger,colloquial,2026-07-12,confirmed
+a073,52,"이 주택의 유지 및 관리 책임은 전적으로 세입자에게 있다.",repair_defect,danger,expand,2026-07-12,confirmed
+a074,59,"보증금은 퇴거 후 관리비 등 각종 정산이 끝나는 대로 돌려주기로 한다.",deposit_return,caution,word_variation,2026-07-12,confirmed
+a075,60,"하자 확인을 위해 보증금 가운데 50만원은 퇴거 후 일주일 안에 정산해 반환한다.",deposit_return,caution,word_variation,2026-07-12,confirmed
+a076,64,"보증금 반환 시 새 임차인의 보증금이 더 낮으면 그 차액을 빼고 돌려준다.",deposit_return,danger,colloquial,2026-07-12,confirmed
+a077,66,"옵션으로 딸린 에어컨과 세탁기, 냉장고가 고장 나면 수리비는 임차인이 낸다.",repair_defect,danger,colloquial,2026-07-12,confirmed
+a078,68,"겨울철 보일러나 수도가 얼어 터지면 그 수리비는 임차인 부담으로 한다.",repair_defect,caution,colloquial,2026-07-12,confirmed
+a079,71,"임차인은 퇴거 시 주택을 입주했을 때의 상태 그대로 반환하기로 한다.",restoration,caution,register,2026-07-12,confirmed
+a080,72,"벽에 못을 박는 등 훼손이 생긴 경우 그 원상복구 비용은 임차인이 부담한다.",restoration,caution,reorder,2026-07-12,confirmed
+a081,73,"퇴거 시 도배 상태가 좋지 않으면 도배 비용을 임차인이 부담하기로 한다.",restoration,caution,word_variation,2026-07-12,confirmed
+a082,74,"원상복구를 어디까지 할지, 비용이 얼마인지는 퇴거 시점에 임대인이 판단해 정한다.",restoration,danger,expand,2026-07-12,confirmed
+a083,78,"재계약할 때 차임은 주변 시세를 반영하여 올릴 수 있다.",termination_renewal,caution,colloquial,2026-07-12,confirmed
+a084,82,"임차인은 현재 등기부등본의 권리관계를 직접 열람해 확인했다.",lien_rights,safe,condense,2026-07-12,confirmed
+a085,85,"임차인은 지금은 물론 앞으로의 등기상 권리관계 변동에 대해서도 이의를 제기하지 않기로 한다.",lien_rights,danger,expand,2026-07-12,confirmed
+a086,90,"관리비는 월 8만원으로 하되, 공용 전기 사용량에 따라 달라질 수 있다.",fees_utilities,caution,word_variation,2026-07-12,confirmed
+a087,94,"장기수선충당금은 세입자가 부담하고 나갈 때도 돌려주지 않는다.",fees_utilities,danger,colloquial,2026-07-12,confirmed
+a088,97,"임대인은 필요하면 미리 알린 뒤 집에 들러 상태를 확인할 수 있다.",etc,caution,colloquial,2026-07-12,confirmed
+a089,98,"이 계약에 관한 소송의 관할 법원은 임대인 주소지의 법원으로 한다.",etc,caution,register,2026-07-12,confirmed
+a090,101,"이 계약서에 적히지 않은 사항은 임대인이 정하는 대로 따른다.",etc,danger,colloquial,2026-07-12,confirmed
+a091,103,"계약 종료일에 임대인은 보증금 전액을 임차인이 지정한 계좌로 입금한다.",deposit_return,safe,word_variation,2026-07-12,confirmed
+a092,104,"보증금 반환이 늦어지면 임대인은 지연된 기간만큼 연 5% 이자를 붙여 지급한다.",deposit_return,safe,colloquial,2026-07-12,confirmed
+a093,108,"특별한 사정이 없는 한 임대인은 만기일에 보증금을 돌려준다.",deposit_return,caution,condense,2026-07-12,confirmed
+a094,111,"임차인이 원상복구를 하지 않으면 임대인은 보증금 전액을 돌려주지 않을 수 있다.",deposit_return,danger,word_variation,2026-07-12,confirmed
+a095,113,"입주 전에 발견된 하자는 잔금일 전까지 임대인이 고쳐 놓는다.",repair_defect,safe,colloquial,2026-07-12,confirmed
+a096,114,"보일러가 고장 나면 임대인은 연락받은 날부터 3일 안에 수리해 준다.",repair_defect,safe,colloquial,2026-07-12,confirmed
+a097,115,"에어컨 필터나 배수구 청소 같은 일상적인 관리는 임차인 몫으로 한다.",repair_defect,safe,colloquial,2026-07-12,confirmed
+a098,117,"20만원이 안 되는 수리는 임차인이 부담하되, 같은 고장이 반복되면 임대인과 협의한다.",repair_defect,caution,word_variation,2026-07-12,confirmed
+a099,123,"입주할 때 집 상태를 임대인과 임차인이 함께 사진으로 남기고, 퇴거 시 원상복구 기준으로 삼는다.",restoration,safe,colloquial,2026-07-12,confirmed
+a100,124,"퇴거 시 임차인은 입주청소 업체를 부른 수준으로 청소된 상태로 집을 반환해야 한다.",restoration,danger,word_variation,2026-07-12,confirmed
+a101,129,"퇴거 시 원상복구 명목으로 보증금의 5퍼센트를 공제하는 것에 임차인은 동의한다.",restoration,danger,register,2026-07-12,confirmed
+a102,131,"계약 해지 통보는 내용증명 우편에 의한 경우에만 효력을 가진다.",termination_renewal,caution,register,2026-07-12,confirmed
+a103,132,"재계약 여부는 만기 두 달 전 임대인이 통보하는 내용에 따르기로 한다.",termination_renewal,danger,colloquial,2026-07-12,confirmed
+a104,133,"임대인이 집을 파는 경우 임차인은 계약 기간이 남아 있어도 3개월 안에 집을 비워 준다.",termination_renewal,danger,colloquial,2026-07-12,confirmed
+a105,136,"임대인은 계약일 기준 국세와 지방세를 완납했음을 증명하는 서류를 임차인에게 보여준다.",lien_rights,safe,expand,2026-07-12,confirmed
+a106,137,"임차인이 대항력을 갖추기 전까지 임대인은 집을 팔거나 담보로 제공하지 않는다.",lien_rights,safe,word_variation,2026-07-12,confirmed
+a107,139,"임대인은 현재 설정된 근저당 대출의 이자를 밀리지 않고 납부하기로 한다.",lien_rights,caution,colloquial,2026-07-12,confirmed
+a108,145,"공과금은 세대별 계량기 수치에 따라 임차인이 쓴 만큼만 낸다.",fees_utilities,safe,colloquial,2026-07-12,confirmed
+a109,154,"여기서 정하지 않은 내용은 주택임대차보호법과 민법, 일반 관례에 따르기로 한다.",etc,safe,condense,2026-07-12,confirmed
+a110,160,"계약을 위반하면 임차인은 임대인이 정하는 손해배상금을 이의 없이 지급하기로 한다.",etc,danger,register,2026-07-12,confirmed
+a111,140,"임차인의 보증보험 가입이 안 될 경우 계약을 유지할지는 양측이 협의해 정하기로 한다.",deposit_return,caution,colloquial,2026-07-12,provisional
+a112,142,"등기부상 권리에 하자가 드러나더라도 본 계약의 효력은 그대로 유지된다.",lien_rights,danger,reorder,2026-07-12,provisional
+a113,147,"관리비에는 공용 관리 항목이 포함되고, 구체적인 내역은 건물 관리 규정을 따른다.",fees_utilities,caution,reorder,2026-07-12,provisional
+a114,148,"인터넷과 케이블 방송 요금은 건물에서 일괄 계약한 상품 기준으로 임차인이 부담한다.",fees_utilities,caution,expand,2026-07-12,provisional
+a115,149,"퇴거할 때 정화조 청소비로 3만원을 정산하기로 한다.",fees_utilities,safe,condense,2026-07-12,provisional
+a116,152,"관리비의 항목과 금액은 매년 임대인이 정해서 고지하는 바에 따르기로 한다.",fees_utilities,danger,register,2026-07-12,provisional
+a117,156,"임대인 동의 없이 제3자를 데려와 함께 거주할 수 없다.",etc,caution,colloquial,2026-07-12,provisional
+a118,159,"임차인은 이 계약과 관련하여 민사상, 형사상 어떠한 이의도 제기하지 않기로 한다.",etc,danger,expand,2026-07-12,provisional
+a119,161,"임차인은 주택임대차분쟁조정위원회 등 외부 기관에 조정을 신청하지 않는다.",etc,danger,condense,2026-07-12,provisional
+a120,162,"갑(임대인)은 임대차가 종료됨과 동시에 을(임차인)에게 보증금 전액을 반환한다.",deposit_return,safe,reorder,2026-07-12,provisional
+a121,163,"주택 인도와 보증금 반환은 서로 동시에 이행하기로 한다.",deposit_return,safe,reorder,2026-07-12,provisional
+a122,164,"하자 점검이 끝날 때까지 보증금 중 100만원의 지급을 유보할 수 있다.",deposit_return,caution,reorder,2026-07-12,provisional
+a123,167,"보증금 반환이 임대인 사정으로 늦어지더라도 지연 이자는 붙지 않는 것으로 한다.",deposit_return,danger,colloquial,2026-07-12,provisional
+a124,168,"보증금을 언제 돌려줄지는 임대인의 자금 사정을 감안하여 임대인이 정하기로 한다.",deposit_return,danger,expand,2026-07-12,provisional
+a125,170,"전기·수도·보일러 같은 주요 설비가 낡아서 고장 난 경우의 수리는 갑(임대인)이 부담한다.",repair_defect,safe,colloquial,2026-07-12,provisional
+a126,173,"세면대나 변기가 막히면 사용상 부주의로 보아 임차인이 수리하기로 한다.",repair_defect,caution,word_variation,2026-07-12,provisional
+a127,174,"수리가 필요할 때 임차인은 임대인이 지정하는 업체에 맡겨야 한다.",repair_defect,caution,register,2026-07-12,provisional
+a128,175,"에어컨 냉매를 충전하는 비용은 임차인 부담으로 한다.",repair_defect,caution,reorder,2026-07-12,provisional
+a129,176,"누수가 생겨도 임대인은 고쳐줄 의무가 없으며 임차인이 자기 비용으로 처리한다.",repair_defect,danger,colloquial,2026-07-12,provisional
+a130,177,"시설물이 고장 나더라도 임대인에게 하자담보책임을 묻지 않기로 한다.",repair_defect,danger,reorder,2026-07-12,provisional
+a131,178,"임대인 승인 없이 진행한 수리는 그 비용을 임차인이 전액 부담한다.",repair_defect,danger,condense,2026-07-12,provisional
+a132,179,"원상복구는 임차인의 고의나 중대한 과실로 인한 훼손에 한하고, 판단 기준은 입주 시 함께 작성한 상태 점검표로 한다.",restoration,safe,expand,2026-07-12,provisional
+a133,181,"퇴거할 때는 입주 시 받은 시설물 목록에 있는 물품을 그대로 반환한다.",restoration,caution,expand,2026-07-12,provisional
+a134,187,"원상복구 명목으로 보증금에서 100만원을 일괄 공제하기로 한다.",restoration,danger,word_variation,2026-07-12,provisional
+a135,188,"흡연을 했든 안 했든 퇴거 시 도배 비용 전액은 임차인이 부담한다.",restoration,danger,colloquial,2026-07-12,provisional
+a136,189,"계약 기간이 남아 있어도 양측이 합의하면 계약을 해지할 수 있다.",termination_renewal,safe,colloquial,2026-07-12,provisional
+a137,191,"갱신 계약은 임대인이 서면으로 동의해야 확정되는 것으로 한다.",termination_renewal,caution,register,2026-07-12,provisional
+a138,192,"임차인은 이사 예정일보다 3개월 앞서 임대인에게 알려야 한다.",termination_renewal,caution,colloquial,2026-07-12,provisional
+a139,193,"재계약 시 보증금은 그 시점의 전세 시세에 맞춰 조정하기로 한다.",termination_renewal,caution,word_variation,2026-07-12,provisional
+a140,194,"임대인은 만기 한 달 전까지 갱신 조건을 임차인에게 알린다.",termination_renewal,caution,condense,2026-07-12,provisional
+a141,198,"임대인의 대출 상환 계획은 말로 안내한 내용에 따르기로 한다.",lien_rights,caution,word_variation,2026-07-12,provisional
+a142,199,"전입신고는 잔금을 치른 다음 주 안으로 마치기로 한다.",lien_rights,danger,colloquial,2026-07-12,provisional
+a143,200,"전세권 설정 등기 여부는 임대인과 나중에 협의해서 정한다.",lien_rights,caution,colloquial,2026-07-12,provisional
+a144,201,"계약 체결 이후의 등기부 변동 사항은 임차인이 스스로 확인할 책임이 있다.",lien_rights,caution,expand,2026-07-12,provisional
+a145,204,"임대인이 집을 팔더라도 새 주인에게 임차권을 주장하는 것은 임차인이 알아서 할 일로 한다.",lien_rights,danger,colloquial,2026-07-12,provisional
+a146,205,"확정일자나 전세권 설정 같은 보증금 보전 조치는 하지 않기로 서로 합의한다.",lien_rights,danger,word_variation,2026-07-12,provisional
+a147,207,"관리비는 입주한 세대 수가 바뀌면 다시 산정될 수 있다.",fees_utilities,caution,reorder,2026-07-12,provisional
+a148,208,"겨울철 난방비는 건물 전체 사용량을 기준으로 각 세대에 나누어 부과한다.",fees_utilities,caution,register,2026-07-12,provisional
+a149,210,"관리비를 연체하면 매월 5%의 연체료가 붙는다.",fees_utilities,danger,colloquial,2026-07-12,provisional
+a150,211,"관리비를 올릴 때 임대인은 그 내역을 밝힐 의무가 없다.",fees_utilities,danger,word_variation,2026-07-12,provisional
+a151,212,"엘리베이터 교체에 드는 분담금은 임차인이 부담하기로 한다.",fees_utilities,danger,reorder,2026-07-12,provisional
+a152,213,"관리비를 내지 않으면 임대인은 임차인의 짐을 마음대로 들어낼 수 있다.",fees_utilities,danger,colloquial,2026-07-12,provisional
+a153,214,"임차인은 이 집을 실제 거주 용도로 사용한다.",etc,safe,condense,2026-07-12,provisional
+a154,216,"임대인 동의 없이는 도어락을 바꿀 수 없다.",etc,caution,condense,2026-07-12,provisional
+a155,217,"임차인 차량은 한 대만 등록 가능하며, 추가는 임대인이 재량으로 정한다.",etc,caution,word_variation,2026-07-12,provisional
+a156,218,"게시판 부착물 같은 건물 이용 규칙은 임대인이 정하는 대로 따르기로 한다.",etc,caution,expand,2026-07-12,provisional
+a157,219,"계약 기간에 생기는 모든 민원과 법적 분쟁의 비용은 임차인이 진다.",etc,danger,reorder,2026-07-12,provisional
+a158,220,"이 특약이 법령과 어긋나더라도 특약 내용이 우선 적용된다.",etc,danger,word_variation,2026-07-12,provisional
+a159,222,"퇴거할 때 임대인이 청구하는 모든 비용을 정산하고, 임차인은 이에 이의를 달지 않는다.",etc,danger,reorder,2026-07-12,provisional
+a160,225,"근저당권 말소는 임대인이 매매 잔금을 받는 일정에 맞춰 차례로 진행한다.",lien_rights,caution,word_variation,2026-07-12,provisional
+a161,226,"관리비에 어떤 항목이 들어가는지는 입주 후 관리사무소의 안내에 따른다.",fees_utilities,caution,expand,2026-07-12,provisional
+a162,227,"옥상이나 공용 창고는 임대인의 허락을 받아 사용할 수 있다.",etc,caution,colloquial,2026-07-12,provisional
+a163,17,"계약이 끝나면 임차인의 주택 반환 의무와 임대인의 보증금 반환 의무는 동시이행 관계에 있다.",deposit_return,safe,register,2026-07-12,provisional
+a164,63,"보증금에서 무엇을 얼마나 공제할지는 임대인이 정한다.",deposit_return,danger,condense,2026-07-12,provisional
+a165,44,"이 건물 안의 모든 시설물은 임차인이 책임지고 유지·보수한다.",repair_defect,danger,reorder,2026-07-12,provisional
+a166,47,"나갈 때 벽지랑 장판을 새것으로 교체해서 입주 때 상태로 돌려놓기로 한다.",restoration,danger,colloquial,2026-07-12,provisional
+a167,55,"임차인은 전입신고를 하지 않는 조건으로 본 계약을 체결한다.",lien_rights,danger,expand,2026-07-12,provisional
+a168,86,"임대인이 이 집을 담보로 추가 대출을 받는 데 임차인은 동의하기로 한다.",lien_rights,danger,register,2026-07-12,provisional
+a169,93,"관리비는 임대인이 건물 사정에 따라 조정할 수 있는 것으로 한다.",fees_utilities,danger,register,2026-07-12,provisional
+a170,151,"관리비 미납 시 임대인은 단전 또는 단수 조치를 취할 수 있다.",fees_utilities,danger,register,2026-07-12,provisional
+a171,57,"임대인의 요구가 있을 때 임차인은 제소전화해 조서 작성에 협조하고 비용을 부담하기로 한다.",etc,danger,register,2026-07-12,provisional
+a172,102,"임차인은 임차권등기명령을 신청하지 않기로 약속한다.",lien_rights,danger,word_variation,2026-07-12,provisional
+a173,76,"계약 기간 중 나가게 되면 다음 세입자가 입주할 때까지 월세를 계속 내야 한다.",termination_renewal,danger,colloquial,2026-07-12,provisional
+a174,134,"계약 조건을 어기면 임대인은 예고 없이 그 즉시 계약을 해지할 수 있다.",termination_renewal,danger,word_variation,2026-07-12,provisional
+a175,80,"본 주택에는 채권최고액 1억 2천만원의 근저당권이 설정되어 있으며 임차인은 이를 확인하였다.",lien_rights,caution,expand,2026-07-12,provisional
+a176,56,"관리비는 따로 부과한다.",fees_utilities,caution,word_variation,2026-07-12,provisional
+a177,70,"퇴거 시 주택은 원상복구하여 반환하는 것으로 한다.",restoration,caution,register,2026-07-12,provisional
+a178,42,"형광등이나 커튼봉 같은 소모품 교체 비용은 임차인이 부담한다.",repair_defect,safe,word_variation,2026-07-12,provisional
+a179,8,"난방·상하수도·전기 등 주요 설비가 노후하거나 불량해 수선이 필요한 경우 그 비용은 임대인 부담이다.",repair_defect,safe,reorder,2026-07-12,provisional
+a180,128,"원상복구 비용은 임대인이 지정한 업체가 낸 견적에 따르고, 임차인은 여기에 이의를 제기할 수 없다.",restoration,danger,expand,2026-07-12,provisional

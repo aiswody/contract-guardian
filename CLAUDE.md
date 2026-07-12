@@ -72,7 +72,8 @@ supabase db push
 
 ## 현재 단계
 
-로드맵 3주차: Baseline 2종 + KLUE-RoBERTa 파인튜닝, 평가 (스펙 §11 참조)
-2주차 완료: dataset v1 — train 643(증강 483 포함) / val 34 / test 34 (`docs/development_process.md` 참조)
-**test set은 학습·튜닝 전 과정에서 참조 금지** (스펙 §5.2 Step 4)
+로드맵 4주차: FastAPI 서빙 + OCR 파이프라인 + 조항 분리 → `/analyze`, `/ocr` 동작 (스펙 §11 참조)
+3주차 완료: 위험도 모델 v2(danger Recall 0.636, threshold 0.7) + 카테고리 모델(Macro-F1 0.967).
+test set 개봉 완료 — 이후 모델 변경 시 test 재사용 금지 (`ml/reports/week3_results.md` 참조)
+모델 아티팩트 위치: `model-server/models/{risk_model_v2,category_model}/best` (git 미포함)
 이 섹션은 주차가 넘어갈 때마다 갱신한다.

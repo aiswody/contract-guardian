@@ -39,11 +39,13 @@ def predict(model_dir: Path, texts, batch_size=32):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--split", default="val")
+    ap.add_argument("--risk-dir", default="risk_model", help="model-server/models/ 아래 위험도 모델 디렉토리명")
+    ap.add_argument("--skip-category", action="store_true")
     args = ap.parse_args()
 
     texts, risk_true, rows = load_split(args.split)
 
-    risk_pred, risk_conf = predict(MODELS / "risk_model" / "best", texts)
+    risk_pred, risk_conf = predict(MODELS / args.risk_dir / "best", texts)
     report(f"KLUE-RoBERTa 위험도 — {args.split}", risk_true, risk_pred)
     wrong_high = sum(1 for t, p, c in zip(risk_true, risk_pred, risk_conf) if t != p and c >= 0.9)
     print(f"confidence: 평균 {sum(risk_conf) / len(risk_conf):.3f}, "
@@ -53,9 +55,10 @@ def main():
         if t != p:
             print(f"  정답 {t} / 예측 {p} (conf {c:.2f}) — {r['text'][:50]}")
 
-    cat_true = [r["category"] for r in rows]
-    cat_pred, _ = predict(MODELS / "category_model" / "best", texts)
-    report(f"KLUE-RoBERTa 카테고리 — {args.split}", cat_true, cat_pred, labels=CATEGORIES)
+    if not args.skip_category:
+        cat_true = [r["category"] for r in rows]
+        cat_pred, _ = predict(MODELS / "category_model" / "best", texts)
+        report(f"KLUE-RoBERTa 카테고리 — {args.split}", cat_true, cat_pred, labels=CATEGORIES)
 
 
 if __name__ == "__main__":

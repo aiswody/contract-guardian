@@ -54,6 +54,14 @@ def main():
             print(f"  - pilot {k} (seed {sid}): 1회차={r1[k][field]} / 2회차={r2[k][field]} / 잠정={prov}")
             print(f"    {r1[k]['text'][:60]}...")
 
+    # 위험 경계(danger vs 비danger) 일치율 — FN 최소화 관점의 핵심 지표
+    keys = [k for k in r1 if r1[k]["risk_level"].strip() and r2[k]["risk_level"].strip()]
+    if keys:
+        cross = [k for k in keys
+                 if (r1[k]["risk_level"].strip() == "danger") != (r2[k]["risk_level"].strip() == "danger")]
+        rate_b = 1 - len(cross) / len(keys)
+        print(f"\n[위험 경계] danger vs 비danger 자기 일치율: {rate_b:.1%} ({len(keys) - len(cross)}/{len(keys)})")
+
     # 잠정 라벨과의 비교 (1회차 기준)
     filled = [k for k in r1 if r1[k]["risk_level"].strip()]
     if filled:

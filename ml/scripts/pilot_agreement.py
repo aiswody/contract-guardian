@@ -5,8 +5,9 @@
 가이드라인 기반 판단이 어긋난 지점을 찾기 위함.
 
 합격선(가이드라인 §6): 위험도 일치율 90% 이상.
-사용법: python ml/scripts/pilot_agreement.py
+사용법: python ml/scripts/pilot_agreement.py [--prefix pilot2]
 """
+import argparse
 import csv
 from pathlib import Path
 
@@ -29,9 +30,13 @@ def agreement(r1, r2, field):
 
 
 def main():
-    r1 = load(PILOT_DIR / "pilot_round1.csv")
-    r2 = load(PILOT_DIR / "pilot_round2.csv")
-    mapping = load(PILOT_DIR / "pilot_mapping.csv")
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--prefix", default="pilot")
+    args = ap.parse_args()
+
+    r1 = load(PILOT_DIR / f"{args.prefix}_round1.csv")
+    r2 = load(PILOT_DIR / f"{args.prefix}_round2.csv")
+    mapping = load(PILOT_DIR / f"{args.prefix}_mapping.csv")
     seed = load(SEED_CSV, key="id")
 
     for field, label in (("risk_level", "위험도"), ("category", "카테고리")):

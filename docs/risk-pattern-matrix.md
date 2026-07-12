@@ -90,11 +90,11 @@
 | deposit_return | 8 | 7 | 7 | 22 |
 | repair_defect | 10 | 8 | 6 | 24 |
 | restoration | 7 | 7 | 6 | 20 |
-| termination_renewal | 11 | 8 | 7 | 26 |
-| lien_rights | 10 | 8 | 7 | 25 |
+| termination_renewal | 11 | 7 | 9 | 27 |
+| lien_rights | 11 | 7 | 7 | 25 |
 | fees_utilities | 8 | 8 | 6 | 22 |
-| etc | 8 | 7 | 7 | 22 |
-| **합계** | **62** | **53** | **46** | **161 / 400** |
+| etc | 8 | 7 | 6 | 21 |
+| **합계** | **63** | **51** | **47** | **161 / 400** |
 
 위험도 비율: safe 38% / caution 33% / danger 29%.
 칸별 최소 10 달성: 4/21칸. 나머지 칸은 6~8건 — 4차 배치(각 칸 +2~4)로 전 칸 10+ 달성 예정.

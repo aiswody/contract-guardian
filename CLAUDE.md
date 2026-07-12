@@ -72,6 +72,7 @@ supabase db push
 
 ## 현재 단계
 
-로드맵 2주차: LLM 증강 + 전수 검수, train/val/test 분할 → `dataset v1` (스펙 §11 참조)
-1주차 완료: 시드 229문장, 라벨링 가이드라인 v0.6, 파일럿 3회 검증 (`docs/development_process.md` 참조)
+로드맵 3주차: Baseline 2종 + KLUE-RoBERTa 파인튜닝, 평가 (스펙 §11 참조)
+2주차 완료: dataset v1 — train 643(증강 483 포함) / val 34 / test 34 (`docs/development_process.md` 참조)
+**test set은 학습·튜닝 전 과정에서 참조 금지** (스펙 §5.2 Step 4)
 이 섹션은 주차가 넘어갈 때마다 갱신한다.

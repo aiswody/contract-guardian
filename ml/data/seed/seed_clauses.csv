@@ -221,9 +221,10 @@ id,text,category,risk_level,source,source_note,collected_at,label_status
 220,본 특약이 법령과 상충하는 경우에도 특약이 우선한다.,etc,danger,authored,4차: 강행규정 배제 시도,2026-07-12,confirmed
 221,임차인은 임대인의 요구가 있으면 언제든지 주택 내부 점검에 응해야 한다.,etc,danger,authored,4차: 무제한 출입·점검 (사례 28의 danger 축),2026-07-12,confirmed
 222,퇴거 시 임차인은 임대인이 청구하는 일체의 비용을 정산 후 이의를 제기하지 않는다.,etc,danger,authored,4차: 청구 백지위임 + 이의 포기,2026-07-12,confirmed
-223,"형광등, 수도꼭지 등의 교체는 임차인이 하되 노후로 인한 경우에는 임대인과 협의한다.",repair_defect,caution,authored,"보충: 협의 결과 불명 — 모호 축",2026-07-12,provisional
-224,"임대인은 보증금 반환 관련 분쟁이나 소송이 없음을 구두로 확인하였다.",lien_rights,caution,authored,"보충: 구두 확인 — 서면 증빙 없음",2026-07-12,provisional
-225,"근저당권 말소는 임대인의 매매 잔금 수령 일정에 따라 순차 진행하기로 한다.",lien_rights,caution,authored,"보충: 말소 시점이 타 거래에 종속 — 모호 축",2026-07-12,provisional
-226,"관리비 항목은 입주 후 관리사무소 안내에 따른다.",fees_utilities,caution,authored,"보충: 항목 확정을 외부 안내에 위임",2026-07-12,provisional
-227,"임차인은 공용 옥상 및 창고를 임대인 허가 하에 사용할 수 있다.",etc,caution,authored,"보충: 허가 재량 — 기준 없음",2026-07-12,provisional
-228,"임차인은 계약 조건을 제3자에게 누설하지 않으며 위반 시 임대인이 정한 위약금을 지급한다.",etc,danger,authored,"보충: 위약금 일방 결정 (배상액 일방 결정 계열)",2026-07-12,provisional
+223,"형광등, 수도꼭지 등의 교체는 임차인이 하되 노후로 인한 경우에는 임대인과 협의한다.",repair_defect,caution,authored,"보충: 노후 원인일 때 임대인 부담이 아니라 협의로 남아 있어 모호 축",2026-07-12,confirmed
+224,"임대인은 보증금 반환 관련 분쟁이나 소송이 없음을 구두로 확인하였다.",deposit_return,caution,authored,"v0.5 재검토: 보증금 반환 관련 분쟁 여부는 deposit_return 축이 더 적절함. 구두 확인이라 증빙이 약해 caution",2026-07-12,confirmed
+225,"근저당권 말소는 임대인의 매매 잔금 수령 일정에 따라 순차 진행하기로 한다.",lien_rights,caution,authored,"보충: 근저당 말소 시점이 임대인의 매매 잔금 수령 일정에 종속되어 모호 축",2026-07-12,confirmed
+226,"관리비 항목은 입주 후 관리사무소 안내에 따른다.",fees_utilities,caution,authored,"보충: 관리비 항목 확정을 계약서가 아닌 입주 후 외부 안내에 위임",2026-07-12,confirmed
+227,"임차인은 공용 옥상 및 창고를 임대인 허가 하에 사용할 수 있다.",etc,caution,authored,"보충: 공용 공간 사용 허가 기준이 명확하지 않아 임대인 재량이 남음",2026-07-12,confirmed
+228,"임차인은 계약 조건을 제3자에게 누설하지 않으며 위반 시 임대인이 정한 위약금을 지급한다.",etc,danger,authored,"보충: 위약금을 임대인이 일방적으로 정하는 구조라 배상액 일방 결정 계열",2026-07-12,confirmed
+229,"임대인은 기존 전세권의 말소 절차가 진행 중임을 고지하며, 완료 시점은 추후 안내한다.",lien_rights,caution,authored,"보충: 말소 진행 중 고지 — 완료 보장·기한 없음 (모호 축)",2026-07-12,provisional

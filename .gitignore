@@ -1,0 +1,35 @@
+# 의존성
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 환경 변수 (API 키 등)
+.env
+.env.*
+!.env.example
+
+# 학습된 모델 아티팩트 (용량 문제 — CLAUDE.md 프로젝트 구조 참조)
+model-server/models/
+ml/checkpoints/
+*.safetensors
+*.bin
+*.pt
+
+# 원본 raw 데이터 (스크랩 원문·이미지 — 저작권/개인정보 문제로 git 미포함)
+# 정제된 시드 CSV(ml/data/seed/)는 git에 포함해 버전 관리한다
+ml/data/raw/
+
+# 빌드 산출물
+dist/
+build/
+
+# 노트북 체크포인트
+.ipynb_checkpoints/
+
+# 에디터/OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

@@ -1,0 +1,35 @@
+uid,text,category,risk_level,source_type,origin_id
+195,임차인은 임대인이 임차주택의 보존에 필요한 행위를 하는 때 이를 거절하지 못한다.,etc,safe,seed,5
+196,"계약 존속 중 발생하는 수리 및 비용부담에 관하여 합의되지 아니한 기타 수선비용의 부담은 민법, 판례 기타 관습에 따른다.",repair_defect,safe,seed,6
+197,"임차인의 고의·과실에 기한 파손과 전구 등 통상의 간단한 수선, 소모품 교체 비용은 임차인이 부담한다.",repair_defect,safe,seed,9
+198,임차인은 임대차기간이 끝나기 6개월 전부터 2개월 전까지의 기간에 계약갱신을 요구할 수 있다.,termination_renewal,safe,seed,14
+199,"임대인이 실거주를 사유로 갱신을 거절하였음에도 정당한 사유 없이 제3자에게 주택을 임대한 경우, 임대인은 갱신거절로 인하여 임차인이 입은 손해를 배상하여야 한다.",termination_renewal,safe,seed,16
+200,"임대인 또는 주택의 하자로 인해 보증보험 가입이 불가할 경우 본 계약은 무효로 하며, 임대인은 지급받은 계약금을 즉시 반환한다.",deposit_return,safe,seed,28
+201,"임대인은 국세 및 지방세 체납이 없음을 고지하며, 체납이 확인될 경우 잔금일 전까지 이를 상환한다.",lien_rights,safe,seed,31
+202,임차인의 사정으로 중도 해지 시 3개월분 월세를 위약금으로 지불한다.,termination_renewal,danger,seed,43
+203,다음 세입자가 구해져야 보증금을 반환할 수 있다.,deposit_return,danger,seed,45
+204,소모품 교체 및 간단한 수리는 임차인 부담으로 한다.,repair_defect,caution,seed,65
+205,임대인은 잔금일 이후 추가 대출을 받는 경우 임차인에게 사전 고지한다.,lien_rights,caution,seed,81
+206,전세보증금 반환보증 보험 가입은 임차인의 책임과 비용으로 한다.,deposit_return,caution,seed,84
+207,임차인은 확정일자를 임대인의 대출 실행일 이후에 받기로 한다.,lien_rights,danger,seed,87
+208,관리비 인상 시 임대인은 임차인에게 서면으로 통보한다.,fees_utilities,caution,seed,92
+209,퇴거 시 공과금 정산 결과에 따라 보증금 반환액이 조정될 수 있다.,deposit_return,safe,seed,106
+210,"곰팡이, 결로 발생 시 임차인의 환기 소홀로 보아 임차인이 제거 및 도배 비용을 부담한다.",repair_defect,danger,seed,118
+211,노후 설비의 교체 비용은 사용자인 임차인이 부담한다.,repair_defect,danger,seed,120
+212,벽에 부착물 설치 시 퇴거 시 원상복구를 조건으로 허용한다.,restoration,safe,seed,125
+213,장판 및 벽지 훼손 시 임차인은 원상복구하거나 상응하는 비용을 지급한다.,restoration,caution,seed,126
+214,퇴거 시 임차인은 입주 연차와 관계없이 도배 비용 전액을 부담한다.,restoration,danger,seed,127
+215,중도 해지 시 임차인은 보증금의 10%를 위약금으로 지급한다.,termination_renewal,danger,seed,135
+216,본 주택의 선순위 보증금 현황은 중개대상물 확인·설명서 기재 내용으로 갈음한다.,lien_rights,safe,seed,138
+217,임대인의 채무로 주택이 경매되는 경우에도 임차인은 임대인에게 손해배상을 청구하지 않는다.,lien_rights,danger,seed,143
+218,관리비는 월 5만원으로 하며 청소비와 승강기 유지비를 포함한다. 항목 변경 시 상호 협의한다.,fees_utilities,safe,seed,144
+219,퇴거 시 관리비 정산 내역은 영수증 등 증빙과 함께 임차인에게 제공한다.,fees_utilities,safe,seed,146
+220,공용 부분 수리비 및 건물 노후 시설 교체비는 임차인들이 세대별로 분담한다.,fees_utilities,danger,seed,150
+221,임차인은 이웃에 피해를 주지 않도록 심야 시간 소음 발생에 주의한다.,etc,safe,seed,153
+222,임대인은 비상시 보관 중인 열쇠로 주택에 출입할 수 있다.,etc,caution,seed,157
+223,임차인이 만기 전 퇴거 의사를 밝힌 경우 보증금 반환 의무는 차기 임차인 입주일까지 유예된다.,deposit_return,danger,seed,169
+224,"통상적인 사용에 따른 벽지 변색, 바닥 눌림 자국은 원상복구 대상이 아니다.",restoration,safe,seed,180
+225,원상복구 범위는 퇴거 1주일 전 합동 점검에서 협의하여 정한다.,restoration,caution,seed,185
+226,임차인(을)이 중도 해지하는 경우 을은 새로운 임차인 알선에 협조하고 중개보수를 부담하기로 한다.,termination_renewal,caution,seed,190
+227,임차인은 임대인의 요구가 있으면 언제든지 주택 내부 점검에 응해야 한다.,etc,danger,seed,221
+228,임대인은 보증금 반환 관련 분쟁이나 소송이 없음을 구두로 확인하였다.,deposit_return,caution,seed,224

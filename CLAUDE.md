@@ -72,5 +72,7 @@ supabase db push
 
 ## 현재 단계
 
-로드맵 1주차: 시드 데이터 수집 및 라벨 체계 확정 (스펙 §11 참조)
+로드맵 3주차: Baseline 2종 + KLUE-RoBERTa 파인튜닝, 평가 (스펙 §11 참조)
+2주차 완료: dataset v1 — train 643(증강 483 포함) / val 34 / test 34 (`docs/development_process.md` 참조)
+**test set은 학습·튜닝 전 과정에서 참조 금지** (스펙 §5.2 Step 4)
 이 섹션은 주차가 넘어갈 때마다 갱신한다.

@@ -1,0 +1,35 @@
+id,text,category,risk_level,source,source_note,collected_at,label_status
+11,"당사자 일방이 채무를 이행하지 아니하는 때에는 상대방은 상당한 기간을 정하여 그 이행을 최고하고 계약을 해제할 수 있으며, 그로 인한 손해배상을 청구할 수 있다.",termination_renewal,safe,standard_contract,법무부 주택임대차표준계약서 제6조,2026-07-12,confirmed
+24,"주택을 인도받은 임차인은 약정일까지 주민등록(전입신고)과 주택임대차계약서상 확정일자를 받기로 하고, 임대인은 임차인의 위 약정일자 이틀 후부터 저당권 등 담보권을 설정할 수 있다.",lien_rights,safe,standard_contract,법무부 주택임대차표준계약서 대항력·우선변제권 특약 예시,2026-07-12,confirmed
+25,계약갱신 시 차임과 보증금의 증액은 기존 금액의 100분의 5를 초과하지 아니하는 범위에서만 가능하다.,termination_renewal,safe,standard_contract,법무부 주택임대차표준계약서 별지1 중요확인사항,2026-07-12,confirmed
+36,계약 만료일에 임대인은 신규 임차인 확보 여부와 관계없이 보증금을 즉시 반환한다.,deposit_return,safe,guide_column,KB의 생각 전월세 특약사항 정리,2026-07-12,confirmed
+40,원상복구 비용은 실제 발생한 수리비를 기준으로 정산한다.,restoration,safe,guide_column,집품 월세 특약 효력 정리,2026-07-12,confirmed
+46,임대인의 사정이 있을 시 언제든 계약을 해지하고 임차인은 즉시 퇴거한다.,termination_renewal,danger,guide_column,사소한 자취백과 독소조항 5가지,2026-07-12,confirmed
+49,고장 발생 시 모든 수리 비용은 임차인이 부담한다.,repair_defect,danger,guide_column,집품 월세 특약 효력 정리 (무효 특약 예시),2026-07-12,confirmed
+61,보증금 반환 기일은 쌍방이 협의하여 조정할 수 있다.,deposit_return,caution,authored,유형표 deposit_return×caution — 조정 조건 모호,2026-07-12,confirmed
+69,"하자 발생 시 임차인은 임대인에게 즉시 통지하여야 하며, 통지 지연으로 확대된 손해는 임차인이 부담한다.",repair_defect,safe,authored,3차 파일럿 재판정: 민법 제634조 통지 의무 수준 → safe (사례 30),2026-07-12,confirmed
+75,중도 해지 시 임차인은 중개보수를 부담한다.,termination_renewal,caution,authored,유형표 termination_renewal×caution — 관행 범위 비용 전가,2026-07-12,confirmed
+83,전세권 설정 등기는 임대인과 별도 협의에 따른다.,lien_rights,caution,authored,유형표 lien_rights×caution — 협조 의무 없음,2026-07-12,confirmed
+89,관리비 인상은 임대인과 임차인이 상호 협의하여 정한다.,fees_utilities,safe,authored,유형표 fees_utilities×safe — 협의 조건 명시,2026-07-12,confirmed
+95,건물 화재보험료와 수선충당금은 임차인이 부담한다.,fees_utilities,danger,authored,유형표 fees_utilities×danger — 소유자 부담 항목 전가,2026-07-12,confirmed
+105,임대인은 임차인의 전세보증금 반환보증 가입을 위한 서류 제공에 지체 없이 협조한다.,deposit_return,safe,authored,유형표 deposit_return×safe — 보증보험 협조 의무,2026-07-12,confirmed
+109,임대인이 새 임차인을 구하지 못한 경우 보증금 반환은 다음 임차인의 계약금 수령 이후로 한다.,deposit_return,danger,authored,유형표 deposit_return×danger — 타인 사정 종속 변형,2026-07-12,confirmed
+110,보증금 반환 지연에 대하여 임차인은 지연 이자나 손해배상을 청구하지 않기로 한다.,deposit_return,danger,authored,유형표 deposit_return×danger — 법정 권리 포기,2026-07-12,confirmed
+112,"누수, 결로 등 건물 하자로 인한 수리는 임대인이 지체 없이 시행한다.",repair_defect,safe,authored,유형표 repair_defect×safe — 건물 하자 임대인 부담 명확,2026-07-12,confirmed
+116,수리가 필요한 경우 임차인은 우선 자비로 처리한 후 임대인과 정산할 수 있다.,repair_defect,caution,authored,유형표 repair_defect×caution — 정산 기준·의무 여부 모호,2026-07-12,confirmed
+122,벽지·장판의 자연 변색 및 가구 자국 등 통상의 사용에 따른 손모는 원상복구 대상에서 제외한다.,restoration,safe,authored,유형표 restoration×safe — 통상 손모 제외 명시,2026-07-12,confirmed
+155,본 특약사항은 쌍방이 협의하여 서면으로만 변경할 수 있다.,etc,safe,authored,유형표 etc×safe — 일방 변경 방지,2026-07-12,confirmed
+158,주차 공간은 건물 사정에 따라 배정이 변경될 수 있다.,etc,caution,authored,유형표 etc×caution — 변경 조건 모호,2026-07-12,confirmed
+166,임대인은 계약 만료일로부터 2주 이내에 보증금을 반환한다.,deposit_return,caution,authored,4차: 기한 명시되나 동시이행 이탈,2026-07-12,confirmed
+171,입주 후 7일 이내에 고지되지 않은 하자는 임차인이 수리한다.,repair_defect,danger,authored,판정 확정: 사례 33 — 단기 고지기간 경과 후 숨은·주요 하자까지 전면 전가 → danger,2026-07-12,confirmed
+182,임차인은 퇴거 시 벽면 못 자국을 메우고 반환한다.,restoration,caution,authored,4차: 통상 손모(못 자국) 복구 요구 (사례 12·21 계열),2026-07-12,confirmed
+183,반려동물로 인한 냄새 제거 비용은 임차인이 부담한다.,restoration,caution,authored,4차: 냄새 판단 기준 모호,2026-07-12,confirmed
+186,"임차인은 퇴거 시 장판, 벽지, 조명을 신품으로 교체하여 반환하기로 한다.",restoration,danger,authored,4차: 신품 교체 강제 — 통상 마모 초과 전가,2026-07-12,confirmed
+195,"임대인이 매매, 재건축 등 필요하다고 인정하는 경우 계약 기간 중에도 해지를 통보할 수 있다.",termination_renewal,danger,authored,4차: 일방 해지권 — 인정 주체가 임대인,2026-07-12,confirmed
+196,임대인은 잔금일까지 기존 근저당권(채권최고액 6천만원)을 말소하기로 한다.,lien_rights,safe,authored,4차: 말소 조건 명시 — 금액 구체화 변형,2026-07-12,confirmed
+202,본 주택은 신탁 등기된 부동산으로 수탁사의 동의서는 추후 교부한다.,lien_rights,danger,authored,판정 확정: 사례 34 — 신탁 무동의 계약은 효력 자체가 위협받는 하자로 해소 약속만으로는 부족 → danger 상향 (FN 최소화),2026-07-12,confirmed
+203,신탁회사의 동의 없이 체결한 본 계약에 대해 임차인은 임대인에게 책임을 묻지 않는다.,lien_rights,danger,authored,4차: 무권한 계약 책임 면제,2026-07-12,confirmed
+206,관리비는 없으며 전기·가스·수도는 임차인 명의로 각자 납부한다.,fees_utilities,safe,authored,4차: 부담 구조 명확 — 실사용 직접 납부,2026-07-12,confirmed
+209,인터넷은 건물 공용 회선을 사용하며 속도 및 품질에 대해 임대인은 책임지지 않는다.,fees_utilities,caution,authored,4차: 선택권 없는 일괄 제공 + 면책,2026-07-12,confirmed
+215,본 계약에서 정하지 않은 사항은 관계 법령 및 일반 관례에 따라 상호 협의하여 처리한다.,etc,safe,authored,4차: 법정 기본값 준거 변형,2026-07-12,confirmed
+228,임차인은 계약 조건을 제3자에게 누설하지 않으며 위반 시 임대인이 정한 위약금을 지급한다.,etc,danger,authored,보충: 위약금을 임대인이 일방적으로 정하는 구조라 배상액 일방 결정 계열,2026-07-12,confirmed

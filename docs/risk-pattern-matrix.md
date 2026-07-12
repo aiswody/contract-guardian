@@ -87,14 +87,14 @@
 
 | 카테고리 | safe | caution | danger | 소계 |
 |---|---|---|---|---|
-| deposit_return | 9 | 6 | 7 | 22 |
-| repair_defect | 11 | 6 | 7 | 24 |
-| restoration | 7 | 6 | 7 | 20 |
-| termination_renewal | 11 | 7 | 9 | 27 |
-| lien_rights | 11 | 7 | 7 | 25 |
-| fees_utilities | 8 | 8 | 6 | 22 |
+| deposit_return | 9 | 8 | 7 | 24 |
+| repair_defect | 12 | 5 | 7 | 24 |
+| restoration | 8 | 5 | 7 | 20 |
+| termination_renewal | 11 | 5 | 11 | 27 |
+| lien_rights | 12 | 4 | 7 | 23 |
+| fees_utilities | 9 | 7 | 6 | 22 |
 | etc | 8 | 7 | 6 | 21 |
-| **합계** | **65** | **47** | **49** | **161 / 400** |
+| **합계** | **69** | **41** | **51** | **161 / 400** |
 
 위험도 비율: safe 38% / caution 33% / danger 29%.
 칸별 최소 10 달성: 4/21칸. 나머지 칸은 6~8건 — 4차 배치(각 칸 +2~4)로 전 칸 10+ 달성 예정.

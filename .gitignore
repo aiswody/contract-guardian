@@ -33,3 +33,6 @@ build/
 .idea/
 Thumbs.db
 .DS_Store
+
+# 검수용 파생 파일 (aug_review_sheet.py로 재생성)
+ml/data/augmented/review_view.md

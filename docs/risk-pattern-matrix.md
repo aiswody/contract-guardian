@@ -83,16 +83,22 @@
 
 수집이 진행되면 아래 표의 수치를 갱신한다. (`ml/scripts/coverage.py`로 자동 집계 예정 — 2주차)
 
+최종 갱신: 2026-07-12 (1차 배치 — 표준계약서 + 가이드·칼럼)
+
 | 카테고리 | safe | caution | danger | 소계 |
 |---|---|---|---|---|
-| deposit_return | 0 | 0 | 0 | 0 |
-| repair_defect | 0 | 0 | 0 | 0 |
-| restoration | 0 | 0 | 0 | 0 |
-| termination_renewal | 0 | 0 | 0 | 0 |
-| lien_rights | 0 | 0 | 0 | 0 |
-| fees_utilities | 0 | 0 | 0 | 0 |
-| etc | 0 | 0 | 0 | 0 |
-| **합계** | **0** | **0** | **0** | **0 / 400** |
+| deposit_return | 5 | 0 | 1 | 6 |
+| repair_defect | 7 | 0 | 3 | 10 |
+| restoration | 4 | 0 | 2 | 6 |
+| termination_renewal | 11 | 0 | 4 | 15 |
+| lien_rights | 8 | 0 | 0 | 8 |
+| fees_utilities | 2 | 0 | 0 | 2 |
+| etc | 5 | 0 | 0 | 5 |
+| **합계** | **42** | **0** | **10** | **52 / 400** |
+
+**부족 칸 (다음 배치 우선순위)**: caution 전 카테고리(0건 — 가이드류는 "좋은 특약/나쁜 특약"만 다루고
+모호·미명시 사례를 다루지 않음. 커뮤니티 실사례 + 직접 작성으로 채울 것),
+`fees_utilities` 전반, `lien_rights`·`etc`·`deposit_return`의 danger.
 
 ## 수집 출처 우선순위 (스펙 §5.2 Step 1)
 

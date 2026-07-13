@@ -39,4 +39,6 @@ class AnalyzeResponse(BaseModel):
 
 
 class OcrRequest(BaseModel):
-    image_urls: list[str]
+    image_urls: list[str] | None = None
+    images_base64: list[str] | None = None
+    image_format: str = "jpg"

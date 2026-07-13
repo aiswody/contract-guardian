@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom'
+import { Navigate, useNavigate } from 'react-router-dom'
 import { CATEGORY_LABEL, RISK_LABEL } from '../labels'
 import { useFlow } from '../store'
 
@@ -62,10 +62,8 @@ export default function ResultPage() {
   const navigate = useNavigate()
   const { result } = useFlow()
 
-  if (!result) {
-    navigate('/')
-    return null
-  }
+  // 새로고침 등으로 결과 상태가 없으면 처음으로 (렌더 중 navigate 호출은 화면이 죽는다)
+  if (!result) return <Navigate to="/" replace />
 
   const { summary, clauses, missing, disclaimer, model_version } = result
   const order = { danger: 0, uncertain: 1, caution: 2, safe: 3 }

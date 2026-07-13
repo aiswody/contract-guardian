@@ -8,6 +8,7 @@ GET  /health, /model-info
 /analyze의 image_urls 경로는 프론트의 교정 화면을 거친 뒤에만 쓰도록 프론트에서 강제한다.
 로컬 실행: cd model-server && uvicorn app.main:app --reload
 """
+import os
 from contextlib import asynccontextmanager
 from pathlib import Path
 
@@ -33,6 +34,16 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(title="Contract Guardian Model Server", lifespan=lifespan)
+
+# 프론트(Vite dev 서버·Vercel)에서의 브라우저 호출 허용
+from fastapi.middleware.cors import CORSMiddleware  # noqa: E402
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=os.environ.get("CORS_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173").split(","),
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.get("/health")

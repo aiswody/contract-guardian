@@ -72,8 +72,8 @@ supabase db push
 
 ## 현재 단계
 
-로드맵 5주차: 프론트 — 업로드 → 교정 → 분석 → 결과 화면, 메인 플로우 E2E (스펙 §11 참조)
-4주차 완료: 모델 서버 동작 — `/analyze`(분리→분류, threshold 0.7·uncertain·근거 신호),
-`/ocr`(CLOVA 연동 완료, `model-server/.env` 필요 — git 미포함)
-모델 아티팩트 위치: `model-server/models/{risk_model_v2,category_model}/best` (git 미포함)
+로드맵 6주차: 누락 조항 탐지 + 조항별 쉬운 설명 (스펙 §11 참조)
+**6주차 제약: 무료 우선** — LLM 설명은 가이드라인 사례집 기반 템플릿으로 먼저 구현하고,
+LLM API는 교체 가능한 인터페이스로 설계 (스펙 §4.5와의 차이는 개발 기록에 명시)
+5주차 완료: 프론트 메인 플로우 E2E + /guide. 모델 아티팩트: `model-server/models/` (git 미포함)
 이 섹션은 주차가 넘어갈 때마다 갱신한다.

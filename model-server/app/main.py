@@ -1,0 +1,74 @@
+"""계약서 지킴이 모델 서버 (스펙 §8).
+
+POST /analyze : 텍스트(교정 완료) → 조항 분리 → 위험도/카테고리 분류
+POST /ocr     : 이미지 OCR (CLOVA 설정 시 — 미설정이면 503, 텍스트 직접 입력 경로 사용)
+GET  /health, /model-info
+
+원칙: OCR 결과는 사용자 교정을 거친 텍스트만 분석한다 (스펙 §9-4).
+/analyze의 image_urls 경로는 프론트의 교정 화면을 거친 뒤에만 쓰도록 프론트에서 강제한다.
+로컬 실행: cd model-server && uvicorn app.main:app --reload
+"""
+import os
+from contextlib import asynccontextmanager
+
+from fastapi import FastAPI, HTTPException
+
+from .inference import MODEL_VERSION, THRESHOLD, Pipeline
+from .schemas import AnalyzeRequest, AnalyzeResponse, OcrRequest, Summary
+from .segmentation import segment
+
+pipeline: Pipeline | None = None
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    global pipeline
+    pipeline = Pipeline()  # 모델은 기동 시 1회 로드
+    yield
+
+
+app = FastAPI(title="Contract Guardian Model Server", lifespan=lifespan)
+
+
+@app.get("/health")
+def health():
+    return {"status": "ok"}
+
+
+@app.get("/model-info")
+def model_info():
+    return {
+        "model_version": MODEL_VERSION,
+        "backbone": "klue/roberta-base",
+        "risk_threshold": THRESHOLD,
+        "metrics_note": "test(34문장): 위험도 danger Recall 0.636 / 카테고리 Macro-F1 0.967 — ml/reports/week3_results.md",
+    }
+
+
+@app.post("/ocr")
+def ocr(req: OcrRequest):
+    if not os.environ.get("CLOVA_OCR_SECRET"):
+        raise HTTPException(503, "OCR 미설정 (CLOVA_OCR_SECRET 필요). 텍스트 직접 입력 경로를 사용하세요.")
+    raise HTTPException(501, "CLOVA OCR 연동 예정")
+
+
+@app.post("/analyze", response_model=AnalyzeResponse)
+def analyze(req: AnalyzeRequest):
+    if not req.ocr_text:
+        if req.image_urls:
+            raise HTTPException(503, "이미지 경로는 OCR 설정 후 지원. 교정된 텍스트(ocr_text)를 보내세요.")
+        raise HTTPException(422, "ocr_text가 필요합니다.")
+
+    clauses_text = segment(req.ocr_text)
+    if not clauses_text:
+        raise HTTPException(422, "분리 가능한 조항이 없습니다. 입력 텍스트를 확인하세요.")
+
+    clauses = pipeline.analyze_clauses(clauses_text)
+    counts = {k: sum(1 for c in clauses if c["risk_level"] == k)
+              for k in ("danger", "caution", "safe", "uncertain")}
+    return AnalyzeResponse(
+        contract_id=req.contract_id,
+        model_version=MODEL_VERSION,
+        clauses=clauses,
+        summary=Summary(total=len(clauses), **counts),
+    )

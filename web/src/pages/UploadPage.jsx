@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { requestOcr } from '../api'
 import { useFlow } from '../store'
 
@@ -49,6 +49,23 @@ export default function UploadPage() {
         <h1>계약서 지킴이</h1>
         <p>서명하기 전 5분, 전월세 계약서의 특약을 확인하세요.</p>
       </header>
+
+      <section className="intro card">
+        <p>
+          부동산 사무실에서 계약서를 처음 받는 순간은 대부분 <strong>서명 직전</strong>입니다.
+          특약 6~7줄을 읽고 판단할 시간은 몇 분뿐이고, 옆에서는 "다 표준 문구예요"라는 말이 들리죠.
+        </p>
+        <p>
+          계약서 지킴이는 특약을 조항 단위로 나눠 <strong>불리할 수 있는 조항</strong>을 짚어주고,
+          왜 그런지 근거를 보여줍니다. 직접 학습시킨 AI 분류 모델이 판정합니다.
+        </p>
+        <ol className="steps">
+          <li><strong>사진 촬영</strong> — 특약 부분을 찍거나 텍스트를 붙여넣어요</li>
+          <li><strong>내용 확인</strong> — AI가 읽어낸 글자를 직접 확인·수정해요</li>
+          <li><strong>결과 보기</strong> — 조항별 판정과 근거, 요약을 받아요</li>
+        </ol>
+        <Link to="/guide" className="linkbtn">📋 계약 전 필수 특약 체크리스트 보기</Link>
+      </section>
 
       <section className="card">
         <h2>1. 계약서 사진 올리기</h2>

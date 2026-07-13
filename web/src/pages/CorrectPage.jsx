@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Navigate, useNavigate } from 'react-router-dom'
 import { requestAnalyze } from '../api'
 import { useFlow } from '../store'
 
@@ -11,10 +11,7 @@ export default function CorrectPage() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
 
-  if (!ocrText) {
-    navigate('/')
-    return null
-  }
+  if (!ocrText) return <Navigate to="/" replace />
 
   async function handleAnalyze() {
     setLoading(true)

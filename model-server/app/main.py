@@ -18,18 +18,23 @@ from fastapi import FastAPI, HTTPException
 
 load_dotenv(Path(__file__).resolve().parents[1] / ".env")
 
+from .explain import get_explainer
 from .inference import MODEL_VERSION, THRESHOLD, Pipeline
+from .missing import MissingDetector
 from .ocr import OcrNotConfigured, run_ocr
 from .schemas import AnalyzeRequest, AnalyzeResponse, OcrRequest, Summary
 from .segmentation import segment
 
 pipeline: Pipeline | None = None
+missing_detector: MissingDetector | None = None
+explainer = get_explainer()
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    global pipeline
-    pipeline = Pipeline()  # 모델은 기동 시 1회 로드
+    global pipeline, missing_detector
+    pipeline = Pipeline()                # 분류 모델 — 기동 시 1회 로드
+    missing_detector = MissingDetector() # 임베딩 모델 — 기동 시 1회 로드
     yield
 
 
@@ -90,11 +95,26 @@ def analyze(req: AnalyzeRequest):
         raise HTTPException(422, "분리 가능한 조항이 없습니다. 입력 텍스트를 확인하세요.")
 
     clauses = pipeline.analyze_clauses(clauses_text)
+    missing, protective_sim = missing_detector.detect(clauses_text)
+
+    # 교차 검증: 권장 필수 특약과 강하게 매칭(보호 조항으로 보임)되는데 모델이
+    # 위험/주의로 판정했고 위험 신호 패턴도 없다면 — 판정 상충이므로 확인 필요로 강등.
+    # (신호가 잡힌 조항은 강등하지 않는다: 임베딩은 부정어에 둔감해 위장 조항 위험이 있음)
+    from .missing import SIM_THRESHOLD as PROTECTIVE_SIM
+    for clause, sim in zip(clauses, protective_sim):
+        if (clause["risk_level"] in ("danger", "caution")
+                and not clause["reason"] and sim >= PROTECTIVE_SIM):
+            clause["risk_level"] = "uncertain"
+            clause["reason"] = f"권장 필수 특약과 유사 (유사도 {sim:.0%}) — 모델 판정과 상충"
+
+    for clause in clauses:  # 판정 완료 후 설명 부착 — 설명은 판별에 관여하지 않는다
+        clause.update(explainer.explain(clause) or {})
     counts = {k: sum(1 for c in clauses if c["risk_level"] == k)
               for k in ("danger", "caution", "safe", "uncertain")}
     return AnalyzeResponse(
         contract_id=req.contract_id,
         model_version=MODEL_VERSION,
         clauses=clauses,
+        missing=missing,
         summary=Summary(total=len(clauses), **counts),
     )

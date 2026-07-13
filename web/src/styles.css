@@ -153,6 +153,27 @@ button.ghost {
   padding: 7px 10px;
 }
 
+.explain {
+  margin-top: 8px;
+  font-size: 0.86rem;
+  color: #374151;
+}
+.suggestion {
+  margin-top: 8px;
+  background: #eef7f1;
+  border: 1px solid #cde8d8;
+  border-radius: 10px;
+  padding: 9px 12px;
+  font-size: 0.84rem;
+}
+.suggestion strong { display: block; margin-bottom: 3px; color: #1e7443; font-size: 0.8rem; }
+.suggestion p { color: #2d4a3a; }
+
+.missing-item { padding: 8px 0; border-top: 1px solid var(--line); }
+.missing-item:first-of-type { border-top: none; }
+.missing-item.ok strong { color: #4b5563; font-weight: 500; }
+.missing-item.absent strong { color: #b45309; }
+
 .intro p { font-size: 0.9rem; color: #374151; }
 .intro strong { color: #111827; }
 .steps {

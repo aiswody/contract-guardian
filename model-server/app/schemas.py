@@ -19,6 +19,16 @@ class Clause(BaseModel):
     model_risk: str
     confidence: float
     reason: str | None
+    explanation: str | None = None   # 왜 불리한지 (safe면 None)
+    suggestion: str | None = None    # 수정 요청 문구
+
+
+class MissingItem(BaseModel):
+    name: str
+    description: str
+    is_present: bool
+    similarity: float
+    recommended_text: str | None     # 누락 시 권장 특약 문구
 
 
 class Summary(BaseModel):
@@ -33,7 +43,7 @@ class AnalyzeResponse(BaseModel):
     contract_id: str | None
     model_version: str
     clauses: list[Clause]
-    missing: list[dict] = []   # 6주차: 누락 조항 탐지
+    missing: list[MissingItem] = []  # 필수 조항 7종 존재 여부 (누락 시 권장 문구 포함)
     summary: Summary
     disclaimer: str = DISCLAIMER
 

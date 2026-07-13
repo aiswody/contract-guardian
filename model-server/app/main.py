@@ -18,18 +18,23 @@ from fastapi import FastAPI, HTTPException
 
 load_dotenv(Path(__file__).resolve().parents[1] / ".env")
 
+from .explain import get_explainer
 from .inference import MODEL_VERSION, THRESHOLD, Pipeline
+from .missing import MissingDetector
 from .ocr import OcrNotConfigured, run_ocr
 from .schemas import AnalyzeRequest, AnalyzeResponse, OcrRequest, Summary
 from .segmentation import segment
 
 pipeline: Pipeline | None = None
+missing_detector: MissingDetector | None = None
+explainer = get_explainer()
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    global pipeline
-    pipeline = Pipeline()  # 모델은 기동 시 1회 로드
+    global pipeline, missing_detector
+    pipeline = Pipeline()                # 분류 모델 — 기동 시 1회 로드
+    missing_detector = MissingDetector() # 임베딩 모델 — 기동 시 1회 로드
     yield
 
 
@@ -90,11 +95,15 @@ def analyze(req: AnalyzeRequest):
         raise HTTPException(422, "분리 가능한 조항이 없습니다. 입력 텍스트를 확인하세요.")
 
     clauses = pipeline.analyze_clauses(clauses_text)
+    for clause in clauses:  # 판정 완료 후 설명 부착 — 설명은 판별에 관여하지 않는다
+        clause.update(explainer.explain(clause) or {})
+    missing = missing_detector.detect(clauses_text)
     counts = {k: sum(1 for c in clauses if c["risk_level"] == k)
               for k in ("danger", "caution", "safe", "uncertain")}
     return AnalyzeResponse(
         contract_id=req.contract_id,
         model_version=MODEL_VERSION,
         clauses=clauses,
+        missing=missing,
         summary=Summary(total=len(clauses), **counts),
     )

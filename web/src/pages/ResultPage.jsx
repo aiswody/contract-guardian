@@ -21,7 +21,7 @@ function ClauseCard({ clause }) {
           <p>{suggestion}</p>
         </div>
       )}
-      {risk_level === 'uncertain' && (
+      {risk_level === 'uncertain' && !(reason ?? '').includes('상충') && (
         <p className="reason">
           모델의 확신이 낮아 단정하지 않습니다 (모델 판단: {RISK_LABEL[model_risk]}).
         </p>

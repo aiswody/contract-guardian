@@ -4,6 +4,52 @@
 
 ---
 
+## 4주차 — FastAPI 모델 서버 + OCR 파이프라인 + 조항 분리 (2026-07-13)
+
+### 문제
+
+학습된 모델을 실제 요청을 받는 서비스로 만들어야 한다. 특히 (1) threshold·uncertain
+정책을 추론 경로에 정확히 반영하고, (2) OCR→분리→분석 흐름에서 "교정 전 텍스트로
+분석하지 않는다"(스펙 §9-4)는 안전장치를 지켜야 한다.
+
+### 목표
+
+`POST /analyze`(조항 분리→분류), `POST /ocr`(CLOVA), `GET /health`·`/model-info` 동작 (스펙 §8)
+
+### 구현
+
+- `model-server/app/`: segmentation(번호·문장 경계 분리), inference(모델 로드 1회,
+  threshold 0.7 → `uncertain` 강등, 원 판정·확신도 동반 반환), patterns(가이드라인 기반
+  위험 신호 14종 → reason 필드), main(엔드포인트 + 법률 자문 아님 고지)
+- CLOVA General OCR 연동: base64/URL 입력, lineBreak 기반 줄바꿈 복원(세그멘테이션
+  신호), `enableTableDetection=False`로 표 추출 과금 차단
+- Dockerfile (Cloud Run PORT 대응), 모델 아티팩트는 이미지에 포함하는 단순 구성
+
+### 의사결정
+
+| 결정 | 이유 |
+|---|---|
+| `uncertain`은 강등이되 원 판정(`model_risk`)·확신도 동반 반환 | UI가 "모델은 caution으로 봤지만 확신 낮음"의 맥락을 보여줄 수 있게 |
+| reason 필드를 모델과 독립된 규칙 신호로 | E2E 검증에서 모델이 놓친 danger(보증금 타인 종속)를 패턴 신호가 잡음 — 이중 안전망으로 UI에 함께 노출 |
+| /ocr 결과를 바로 분석하지 않음 | 교정 강제(스펙 §9-4). /ocr은 텍스트+분리 초안만 반환, /analyze는 교정된 텍스트만 수신 |
+| OCR은 CLOVA General 글자 추출만 | 월 100건 무료, 초과 3원/건. 표 추출(22원) 옵션 차단 |
+
+### 검증
+
+- /analyze E2E (샘플 특약 6조항): 4건 정확, 원상복구 단독 조항 과잉 경보(danger — 보수
+  방향), 보증금 타인 종속 하향(caution — 단 규칙 신호가 별도 감지). 3주차 약점과 일치.
+- /ocr 실호출: 렌더링한 특약 이미지 → 텍스트 정확 추출(줄바꿈 보존) → 조항 3건 분리 성공.
+- 연동 삽질 기록: VPC 콘솔의 수동 연동 URL은 사설 IP(10.x)로 외부 접근 불가 →
+  API Gateway 이용 신청 + 자동 연동으로 공개 URL(`apigw.ntruss.com`) 확보로 해결.
+
+### 남은 리스크
+
+- Cloud Run 콜드 스타트(모델 ~900MB 로드) — 스펙 §14의 진행 표시 UX로 완화 예정, 배포 후 실측 필요
+- Supabase JWT 검증 미구현 — 프론트 연동(5주차) 시 추가
+- 원상복구 과잉 경보·보증금 종속 하향은 모델 한계로 v1.5 과제. UI에서 reason 신호 병행 표시로 완화
+
+---
+
 ## 3주차 — Baseline 2종 + KLUE-RoBERTa 파인튜닝, 평가 (2026-07-12)
 
 ### 문제

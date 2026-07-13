@@ -72,8 +72,8 @@ supabase db push
 
 ## 현재 단계
 
-로드맵 4주차: FastAPI 서빙 + OCR 파이프라인 + 조항 분리 → `/analyze`, `/ocr` 동작 (스펙 §11 참조)
-3주차 완료: 위험도 모델 v2(danger Recall 0.636, threshold 0.7) + 카테고리 모델(Macro-F1 0.967).
-test set 개봉 완료 — 이후 모델 변경 시 test 재사용 금지 (`ml/reports/week3_results.md` 참조)
+로드맵 5주차: 프론트 — 업로드 → 교정 → 분석 → 결과 화면, 메인 플로우 E2E (스펙 §11 참조)
+4주차 완료: 모델 서버 동작 — `/analyze`(분리→분류, threshold 0.7·uncertain·근거 신호),
+`/ocr`(CLOVA 연동 완료, `model-server/.env` 필요 — git 미포함)
 모델 아티팩트 위치: `model-server/models/{risk_model_v2,category_model}/best` (git 미포함)
 이 섹션은 주차가 넘어갈 때마다 갱신한다.

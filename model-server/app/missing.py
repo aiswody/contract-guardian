@@ -28,16 +28,25 @@ class MissingDetector:
                                     normalize_embeddings=True)
             self._refs.append((std, emb))
 
-    def detect(self, clause_texts: list[str]) -> list[dict]:
+    def detect(self, clause_texts: list[str]) -> tuple[list[dict], list[float]]:
+        """(필수 조항별 존재 여부, 계약 조항별 '권장 특약 최대 유사도') 반환.
+
+        두 번째 값은 교차 검증용: 권장 특약과 강하게 매칭되는 조항을 모델이
+        위험으로 판정하면 상충이므로 확인 필요로 강등하는 근거가 된다.
+        """
         if not clause_texts:
-            return [self._entry(std, False, 0.0) for std, _ in self._refs]
+            return [self._entry(std, False, 0.0) for std, _ in self._refs], []
         clause_emb = self.model.encode(clause_texts, convert_to_tensor=True,
                                        normalize_embeddings=True)
         results = []
+        clause_max = [0.0] * len(clause_texts)
         for std, ref_emb in self._refs:
-            sim = float(util.cos_sim(ref_emb, clause_emb).max())
-            results.append(self._entry(std, sim >= SIM_THRESHOLD, sim))
-        return results
+            sims = util.cos_sim(ref_emb, clause_emb)          # [문형 수 × 조항 수]
+            per_clause = sims.max(dim=0).values
+            for j, v in enumerate(per_clause.tolist()):
+                clause_max[j] = max(clause_max[j], v)
+            results.append(self._entry(std, float(sims.max()) >= SIM_THRESHOLD, float(sims.max())))
+        return results, clause_max
 
     @staticmethod
     def _entry(std: dict, present: bool, sim: float) -> dict:

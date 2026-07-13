@@ -111,7 +111,16 @@ class TemplateExplainer:
         risk = clause["risk_level"]
         if risk == "safe":
             return None
-        signals = (clause.get("reason") or "").split(" / ")
+        reason = clause.get("reason") or ""
+        if reason.startswith("권장 필수 특약과 유사"):
+            return {
+                "explanation": "이 조항은 세입자를 보호하는 권장 특약과 비슷해 보이는데, "
+                               "모델은 다르게 판정해 판단을 보류했어요. 표현이 미묘하게 다르면 "
+                               "효력이 달라질 수 있으니 원문을 꼼꼼히 확인해보세요.",
+                "suggestion": "아래 누락 체크리스트의 권장 문구와 한 글자씩 비교해보세요. "
+                              "'않는다'가 '할 수 있다'로 바뀌는 것만으로 정반대 조항이 됩니다.",
+            }
+        signals = reason.split(" / ")
         for sig in signals:
             if sig in SIGNAL_TEMPLATES:
                 why, suggestion = SIGNAL_TEMPLATES[sig]

@@ -72,7 +72,7 @@ supabase db push
 
 ## 현재 단계
 
-로드맵 7주차: 히스토리·피드백(Supabase)·PWA, UX 다듬기 → MVP 기능 완결 (스펙 §11 참조)
-6주차 완료: 누락 탐지(임베딩, threshold 0.7 실측) + 템플릿 설명(EXPLAIN_BACKEND 교체 가능)
-+ 권장 특약 교차 검증(보호 조항 FP → 확인 필요 강등). 모델 아티팩트: `model-server/models/` (git 미포함)
+로드맵 8주차: 배포 (Vercel + Cloud Run), README·개발 기록 정리 → 라이브 데모 (스펙 §11 참조)
+7주차 완료: Supabase(로그인·저장·히스토리·피드백) + PWA. MVP 기능 완결.
+환경: `web/.env.local`(Supabase 키), `model-server/.env`(CLOVA 키) — 둘 다 git 미포함
 이 섹션은 주차가 넘어갈 때마다 갱신한다.

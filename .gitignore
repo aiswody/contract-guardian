@@ -38,3 +38,6 @@ Thumbs.db
 ml/data/augmented/review_view.md
 
 # 프론트 빌드 산출물은 dist에 이미 포함됨 (web/dist)
+
+# vite deps 캐시
+web/.vite/

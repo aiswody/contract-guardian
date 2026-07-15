@@ -8,6 +8,7 @@ export default function LoginPage() {
   const { session } = useFlow()
   const [email, setEmail] = useState('')
   const [sent, setSent] = useState(false)
+  const [sending, setSending] = useState(false)
   const [error, setError] = useState(null)
 
   if (!supabase) return <Navigate to="/" replace />
@@ -15,13 +16,23 @@ export default function LoginPage() {
 
   async function handleLogin(e) {
     e.preventDefault()
+    if (sending) return  // 중복 요청 차단 (발송 제한에 걸려 알 수 없는 에러가 뜨는 원인)
+    setSending(true)
     setError(null)
     const { error } = await supabase.auth.signInWithOtp({
       email,
       options: { emailRedirectTo: window.location.origin },
     })
-    if (error) setError(error.message)
-    else setSent(true)
+    setSending(false)
+    if (error) {
+      // 빈 응답('{}')이나 발송 제한은 사용자 언어로 안내
+      const msg = error.message && error.message !== '{}'
+        ? error.message
+        : '잠시 후 다시 시도해주세요. 같은 메일로는 60초에 한 번만 보낼 수 있어요.'
+      setError(msg)
+    } else {
+      setSent(true)
+    }
   }
 
   return (
@@ -43,7 +54,9 @@ export default function LoginPage() {
               onChange={(e) => setEmail(e.target.value)}
               className="text-input"
             />
-            <button className="primary" type="submit">로그인 링크 받기</button>
+            <button className="primary" type="submit" disabled={sending}>
+              {sending ? '보내는 중…' : '로그인 링크 받기'}
+            </button>
           </form>
         )}
         {error && <p className="error">{error}</p>}

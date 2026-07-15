@@ -129,9 +129,12 @@ export default function ResultPage() {
             </p>
           )}
           {session && !saved && (
-            <button className="primary" disabled={saving} onClick={handleSave}>
-              {saving ? '저장 중…' : '이 분석 결과 저장하기'}
-            </button>
+            <>
+              <button className="primary" disabled={saving} onClick={handleSave}>
+                {saving ? '저장 중…' : '이 분석 결과 저장하기'}
+              </button>
+              <p className="hint">저장하면 조항마다 판정 피드백(👍/👎)을 남길 수 있어요.</p>
+            </>
           )}
           {saved && <p className="hint">✅ 저장됐어요. 아래 조항마다 판정 피드백을 남길 수 있고, <Link to="/history">히스토리</Link>에서 다시 볼 수 있어요.</p>}
           {saveError && <p className="error">{saveError}</p>}
